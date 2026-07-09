@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurora Accademia Olistica</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Sora:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          peach:   '#FFE3CB',
+          peachLight: '#FFF7EE',
+          coral:   '#E96B5D',
+          orange:  '#FF905A',
+          sage:    '#81AC8D',
+          ink:     '#3A2E2A',
+        },
+        fontFamily: {
+          display: ['Fraunces', 'serif'],
+          body: ['Sora', 'sans-serif'],
+        },
+      },
+    },
+  }
+</script>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-peachLight font-body text-ink antialiased">
+
+<!-- =========================================================
+     HEADER / HERO
+     ⚠️ PLACEHOLDER: claim, titolo, offerta, foto/mockup e CTA
+     sono segnaposto — da sostituire con i contenuti reali
+     forniti dalla cliente.
+     ========================================================= -->
+<header class="relative overflow-hidden">
+
+  <!-- Blob morbidi di sfondo (elemento firma, versione chiara) -->
+  <div class="pointer-events-none absolute inset-0 -z-0">
+    <div class="bg-blob absolute -top-32 left-1/3 w-[34rem] h-[34rem] rounded-full blur-[100px]"
+         style="background: radial-gradient(circle, rgba(255,144,90,0.28), transparent 70%);"></div>
+    <div class="bg-blob absolute top-0 right-0 w-[28rem] h-[28rem] rounded-full blur-[100px]"
+         style="background: radial-gradient(circle, rgba(129,172,141,0.25), transparent 70%); animation-delay: -6s;"></div>
+    <div class="bg-blob absolute bottom-0 left-0 w-[24rem] h-[24rem] rounded-full blur-[90px]"
+         style="background: radial-gradient(circle, rgba(233,107,93,0.18), transparent 70%); animation-delay: -3s;"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 pt-10 pb-20 md:pt-14 md:pb-28">
+
+    <!-- Logo / nome accademia -->
+    <div class="flex items-center gap-3 mb-16 md:mb-24">
+      <span class="w-2 h-2 rounded-full bg-coral"></span>
+      <span class="font-display text-lg tracking-wide text-ink/90">Aurora Accademia Olistica</span>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-14 md:gap-10 items-center">
+
+      <!-- Colonna testo -->
+      <div>
+        <!-- Slogan / claim del corso -->
+        <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-5">
+          [PLACEHOLDER — Claim del corso, es. "Per chi sente che è il momento di cambiare strada"]
+        </p>
+
+        <!-- Titolo del corso -->
+        <h1 class="font-display text-4xl md:text-6xl leading-[1.08] mb-6 text-coral font-semibold">
+          [PLACEHOLDER — Titolo del Corso]
+        </h1>
+
+        <!-- Offerta / grande promessa -->
+        <p class="text-lg md:text-xl text-ink/80 leading-relaxed mb-10 max-w-lg">
+          [PLACEHOLDER — Offerta in una frase breve, d'impatto, comprensibile a chiunque:
+          cosa ottiene concretamente chi partecipa]
+        </p>
+
+        <!-- CTA -->
+        <a href="#pricing"
+           class="group inline-flex items-center gap-3 bg-coral text-white font-body font-semibold
+                  px-8 py-4 rounded-full hover:bg-orange transition-colors duration-300 shadow-lg shadow-coral/20">
+          [PLACEHOLDER — Es. "Riservo il mio posto" / "Voglio iniziare"]
+          <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
+        </a>
+      </div>
+
+      <!-- Colonna mockup / foto -->
+      <div class="relative">
+        <div class="aspect-[4/5] rounded-3xl border border-ink/10 bg-white/60
+                    flex items-center justify-center overflow-hidden">
+          <!-- Sostituire con <img src="..." alt="..."> quando disponibile -->
+          <span class="text-ink/40 text-sm text-center px-8">
+            [PLACEHOLDER — Foto della cliente / mockup del corso]
+          </span>
+        </div>
+        <!-- dettaglio a incorniciare, richiamo signature -->
+        <div class="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-sage/40 rounded-2xl -z-10"></div>
+      </div>
+
+    </div>
+  </div>
+</header>
+
+<!-- =========================================================
+     RISULTATI
+     ⚠️ PLACEHOLDER: 3-4-6 risultati concreti da sostituire.
+     Regola da rispettare quando arrivano i contenuti reali:
+     NO "imparerai / scoprirai" — SÌ azioni concrete che la
+     persona fa dopo il corso (es. "Conduci una sessione di
+     respirazione guidata con un cliente in autonomia").
+     ========================================================= -->
+<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="max-w-2xl mb-16">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Risultati</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Cosa saprai fare, concretamente, da subito"]
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10">
+
+      <!-- Card risultato 1 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="w-11 h-11 rounded-full bg-coral/15 flex items-center justify-center mb-6">
+          <span class="w-3 h-3 rounded-full bg-coral"></span>
+        </div>
+        <p class="text-ink/80 leading-relaxed">
+          [PLACEHOLDER — Risultato 1: azione concreta, non promessa vaga]
+        </p>
+      </div>
+
+      <!-- Card risultato 2 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="w-11 h-11 rounded-full bg-sage/15 flex items-center justify-center mb-6">
+          <span class="w-3 h-3 rounded-full bg-sage"></span>
+        </div>
+        <p class="text-ink/80 leading-relaxed">
+          [PLACEHOLDER — Risultato 2: azione concreta, non promessa vaga]
+        </p>
+      </div>
+
+      <!-- Card risultato 3 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="w-11 h-11 rounded-full bg-orange/15 flex items-center justify-center mb-6">
+          <span class="w-3 h-3 rounded-full bg-orange"></span>
+        </div>
+        <p class="text-ink/80 leading-relaxed">
+          [PLACEHOLDER — Risultato 3: azione concreta, non promessa vaga]
+        </p>
+      </div>
+
+      <!-- Card risultato 4 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="w-11 h-11 rounded-full bg-coral/15 flex items-center justify-center mb-6">
+          <span class="w-3 h-3 rounded-full bg-coral"></span>
+        </div>
+        <p class="text-ink/80 leading-relaxed">
+          [PLACEHOLDER — Risultato 4 (opzionale, se ne servono 4+)]
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     PER CHI È
+     ⚠️ PLACEHOLDER: liste e caso studio da sostituire.
+     Formato "è per te se / non è per te se" per favorire
+     l'autoselezione del pubblico giusto.
+     ========================================================= -->
+<section class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="max-w-2xl mb-16">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Per chi è</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Fai al caso tuo?"]
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-14">
+
+      <!-- È per te se... -->
+      <div class="p-8 md:p-10 rounded-3xl bg-white border border-sage/20">
+        <h3 class="font-display text-2xl text-sage mb-6">È per te se...</h3>
+        <ul class="space-y-4">
+          <li class="flex gap-3 text-ink/80 leading-relaxed">
+            <span class="text-sage mt-1">✓</span>
+            <span>[PLACEHOLDER — Caratteristica/situazione del pubblico giusto 1]</span>
+          </li>
+          <li class="flex gap-3 text-ink/80 leading-relaxed">
+            <span class="text-sage mt-1">✓</span>
+            <span>[PLACEHOLDER — Caratteristica/situazione del pubblico giusto 2]</span>
+          </li>
+          <li class="flex gap-3 text-ink/80 leading-relaxed">
+            <span class="text-sage mt-1">✓</span>
+            <span>[PLACEHOLDER — Caratteristica/situazione del pubblico giusto 3]</span>
+          </li>
+          <li class="flex gap-3 text-ink/80 leading-relaxed">
+            <span class="text-sage mt-1">✓</span>
+            <span>[PLACEHOLDER — Caratteristica/situazione del pubblico giusto 4]</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Non è per te se... -->
+      <div class="p-8 md:p-10 rounded-3xl bg-white border border-coral/20">
+        <h3 class="font-display text-2xl text-coral mb-6">Non è per te se...</h3>
+        <ul class="space-y-4">
+          <li class="flex gap-3 text-ink/80 leading-relaxed">
+            <span class="text-coral mt-1">✕</span>
+            <span>[PLACEHOLDER — Chi NON dovrebbe iscriversi 1]</span>
+          </li>
+          <li class="flex gap-3 text-ink/80 leading-relaxed">
+            <span class="text-coral mt-1">✕</span>
+            <span>[PLACEHOLDER — Chi NON dovrebbe iscriversi 2]</span>
+          </li>
+          <li class="flex gap-3 text-ink/80 leading-relaxed">
+            <span class="text-coral mt-1">✕</span>
+            <span>[PLACEHOLDER — Chi NON dovrebbe iscriversi 3]</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Caso studio pertinente (facoltativo, da inserire se disponibile) -->
+    <div class="p-8 md:p-10 rounded-3xl bg-white border border-ink/5 flex flex-col md:flex-row gap-8 items-center">
+      <div class="w-20 h-20 rounded-full bg-orange/15 flex items-center justify-center shrink-0">
+        <span class="text-orange text-2xl font-display">"</span>
+      </div>
+      <div>
+        <p class="text-ink/80 leading-relaxed mb-3">
+          [PLACEHOLDER — Caso studio pertinente: breve racconto di una persona che rispecchia
+          il pubblico target, cosa viveva prima e cosa ha ottenuto dopo]
+        </p>
+        <p class="text-sm text-ink/50">
+          — [PLACEHOLDER — Nome, breve descrizione. Fonte del feedback da specificare quando disponibile]
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- =========================================================
+     FEEDBACK 1 — Recensioni scritte
+     ⚠️ PLACEHOLDER: recensioni, valutazione media e numero
+     lanci da aggiornare PRIMA DI OGNI LANCIO.
+     La dicitura sulla fonte in fondo è OBBLIGATORIA e vale
+     per tutte le recensioni della landing (scritte, video,
+     casi studio). Deve sempre contenere:
+       1) da dove sono state prese (messaggi, Google Form...)
+       2) come sono state invitate (richieste o spontanee)
+       3) a cosa si riferiscono
+       4) se in cambio di qualcosa (es. una call), va specificato
+     ========================================================= -->
+<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-6">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Cosa dicono di noi</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Chi l'ha già fatto, racconta così"]
+      </h2>
+    </div>
+ 
+    <!-- Riga statistiche: valutazione media + numero lanci -->
+    <div class="flex flex-wrap gap-10 mb-14">
+      <div>
+        <p class="font-display text-4xl text-coral">[X,X]/5</p>
+        <p class="text-sm text-ink/50 mt-1">[PLACEHOLDER — valutazione media aggiornata]</p>
+      </div>
+      <div>
+        <p class="font-display text-4xl text-coral">[N]</p>
+        <p class="text-sm text-ink/50 mt-1">[PLACEHOLDER — numero di lanci fatti]</p>
+      </div>
+    </div>
+ 
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
+ 
+      <!-- Recensione 1 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="flex gap-1 mb-4 text-orange">★★★★★</div>
+        <p class="text-ink/80 leading-relaxed mb-6">
+          [PLACEHOLDER — Testo della recensione 1]
+        </p>
+        <p class="text-sm font-semibold text-ink/70">[PLACEHOLDER — Nome cognome/iniziale]</p>
+      </div>
+ 
+      <!-- Recensione 2 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="flex gap-1 mb-4 text-orange">★★★★★</div>
+        <p class="text-ink/80 leading-relaxed mb-6">
+          [PLACEHOLDER — Testo della recensione 2]
+        </p>
+        <p class="text-sm font-semibold text-ink/70">[PLACEHOLDER — Nome cognome/iniziale]</p>
+      </div>
+ 
+      <!-- Recensione 3 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="flex gap-1 mb-4 text-orange">★★★★★</div>
+        <p class="text-ink/80 leading-relaxed mb-6">
+          [PLACEHOLDER — Testo della recensione 3]
+        </p>
+        <p class="text-sm font-semibold text-ink/70">[PLACEHOLDER — Nome cognome/iniziale]</p>
+      </div>
+ 
+    </div>
+ 
+    <!-- Dicitura fonte feedback — OBBLIGATORIA, adattare di volta in volta -->
+    <p class="text-sm text-ink/40 max-w-2xl">
+      [PLACEHOLDER — Es.: "Recensioni raccolte tramite Google Form inviato spontaneamente
+      agli studenti al termine del corso [nome corso], in seguito a [eventuale contropartita
+      offerta, es. una call di gruppo]. Adattare questa dicitura in base alla situazione reale,
+      mantenendo sempre: fonte, modalità di richiesta, riferimento e eventuale contropartita."]
+    </p>
+ 
+  </div>
+</section>
+
+<!-- =========================================================
+     ABOUT THE SPEAKER
+     ⚠️ PLACEHOLDER: bio, anni di esperienza, follower, studenti,
+     elenco speaker/eventi e altri riconoscimenti da aggiornare
+     PRIMA DI OGNI LANCIO.
+     ========================================================= -->
+<section class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-16">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Chi ti accompagna</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Chi sono"]
+      </h2>
+    </div>
+ 
+    <div class="grid md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-12 md:gap-16 items-start">
+ 
+      <!-- Foto -->
+      <div class="aspect-[4/5] rounded-3xl bg-white border border-ink/10 flex items-center justify-center overflow-hidden">
+        <!-- Sostituire con <img src="..." alt="..."> quando disponibile -->
+        <span class="text-ink/40 text-sm text-center px-8">
+          [PLACEHOLDER — Foto della speaker]
+        </span>
+      </div>
+ 
+      <!-- Bio + stats -->
+      <div>
+        <p class="text-lg text-ink/80 leading-relaxed mb-10">
+          [PLACEHOLDER — Bio della speaker: chi è, il suo percorso, cosa la rende
+          credibile su questo argomento specifico. Tono personale, non un CV.]
+        </p>
+ 
+        <!-- Riga statistiche -->
+        <div class="grid grid-cols-3 gap-6 mb-12">
+          <div>
+            <p class="font-display text-3xl md:text-4xl text-coral">[N]+</p>
+            <p class="text-sm text-ink/50 mt-1">Anni di esperienza</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl md:text-4xl text-coral">[N]</p>
+            <p class="text-sm text-ink/50 mt-1">Follower</p>
+          </div>
+          <div>
+            <p class="font-display text-3xl md:text-4xl text-coral">[N]</p>
+            <p class="text-sm text-ink/50 mt-1">Studenti formati</p>
+          </div>
+        </div>
+ 
+        <!-- Elenco speaker / eventi -->
+        <div>
+          <p class="text-sm font-semibold text-ink/70 mb-4">[PLACEHOLDER — Ha parlato presso / è stata ospite di:]</p>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 rounded-full bg-white border border-ink/10 text-sm text-ink/60">[Evento/Testata 1]</span>
+            <span class="px-4 py-2 rounded-full bg-white border border-ink/10 text-sm text-ink/60">[Evento/Testata 2]</span>
+            <span class="px-4 py-2 rounded-full bg-white border border-ink/10 text-sm text-ink/60">[Evento/Testata 3]</span>
+          </div>
+        </div>
+ 
+        <!-- Altri riconoscimenti / social proof (facoltativo) -->
+        <p class="text-sm text-ink/50 mt-8">
+          [PLACEHOLDER — Eventuali altri riconoscimenti o premi da menzionare, se presenti]
+        </p>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+<!-- =========================================================
+     VIDEO RECENSIONI
+     ⚠️ PLACEHOLDER: video, copertine e frasi d'impatto da
+     aggiornare PRIMA DI OGNI LANCIO (aggiungere le nuove,
+     scegliere per ciascuna una frase breve per la copertina).
+     Vale anche qui la dicitura obbligatoria sulla fonte dei
+     feedback (vedi sezione Feedback 1).
+     ========================================================= -->
+<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-16">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Nelle loro parole</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Guardale raccontarlo di persona"]
+      </h2>
+    </div>
+ 
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
+ 
+      <!-- Video recensione 1 -->
+      <div class="group relative aspect-[9/16] rounded-3xl overflow-hidden bg-ink/5 border border-ink/10 cursor-pointer">
+        <!-- Sostituire lo sfondo con il fotogramma di copertina reale -->
+        <div class="absolute inset-0 flex items-center justify-center text-ink/30 text-sm text-center px-6">
+          [PLACEHOLDER — Copertina video 1]
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <span class="text-coral text-lg ml-1">▶</span>
+        </div>
+        <p class="absolute bottom-5 left-5 right-5 text-white font-display text-lg leading-snug">
+          [PLACEHOLDER — Frase d'impatto scelta per questa copertina]
+        </p>
+      </div>
+ 
+      <!-- Video recensione 2 -->
+      <div class="group relative aspect-[9/16] rounded-3xl overflow-hidden bg-ink/5 border border-ink/10 cursor-pointer">
+        <div class="absolute inset-0 flex items-center justify-center text-ink/30 text-sm text-center px-6">
+          [PLACEHOLDER — Copertina video 2]
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <span class="text-coral text-lg ml-1">▶</span>
+        </div>
+        <p class="absolute bottom-5 left-5 right-5 text-white font-display text-lg leading-snug">
+          [PLACEHOLDER — Frase d'impatto scelta per questa copertina]
+        </p>
+      </div>
+ 
+      <!-- Video recensione 3 -->
+      <div class="group relative aspect-[9/16] rounded-3xl overflow-hidden bg-ink/5 border border-ink/10 cursor-pointer">
+        <div class="absolute inset-0 flex items-center justify-center text-ink/30 text-sm text-center px-6">
+          [PLACEHOLDER — Copertina video 3]
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/70 via-transparent to-transparent"></div>
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <span class="text-coral text-lg ml-1">▶</span>
+        </div>
+        <p class="absolute bottom-5 left-5 right-5 text-white font-display text-lg leading-snug">
+          [PLACEHOLDER — Frase d'impatto scelta per questa copertina]
+        </p>
+      </div>
+ 
+    </div>
+ 
+    <!-- Dicitura fonte feedback — OBBLIGATORIA, stessa regola di Feedback 1 -->
+    <p class="text-sm text-ink/40 max-w-2xl">
+      [PLACEHOLDER — Adattare la dicitura sulla fonte dei video-feedback: da dove sono
+      stati presi, come sono stati richiesti, a cosa si riferiscono, eventuale contropartita.]
+    </p>
+ 
+  </div>
+</section>
+
+<!-- =========================================================
+     PROGRAMMA DEL CORSO
+     ⚠️ PLACEHOLDER: il programma va SEMPRE riletto da zero
+     prima di ogni lancio, verificando che non ci siano lezioni
+     vecchie/errate o bonus non più validi. Il riquadro "cosa
+     incluso in breve" deve corrispondere esattamente al numero
+     reale di lezioni e bonus elencati sotto.
+     Qui i numeri dei moduli SONO giustificati: è una vera
+     sequenza didattica, non risultati paralleli come sopra.
+     ========================================================= -->
+<section class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-12">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Il percorso</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Cosa affronterai passo dopo passo"]
+      </h2>
+    </div>
+ 
+    <!-- Cosa è incluso in breve — DEVE corrispondere al conteggio reale sotto -->
+    <div class="flex flex-wrap gap-4 mb-14">
+      <div class="px-6 py-3 rounded-full bg-white border border-ink/10 text-sm text-ink/70">
+        <span class="font-semibold text-coral">[N]</span> moduli
+      </div>
+      <div class="px-6 py-3 rounded-full bg-white border border-ink/10 text-sm text-ink/70">
+        <span class="font-semibold text-coral">[N]</span> lezioni
+      </div>
+      <div class="px-6 py-3 rounded-full bg-white border border-ink/10 text-sm text-ink/70">
+        <span class="font-semibold text-coral">[N]</span> bonus inclusi
+      </div>
+      <div class="px-6 py-3 rounded-full bg-white border border-ink/10 text-sm text-ink/70">
+        [PLACEHOLDER — es. "Accesso permanente"]
+      </div>
+    </div>
+ 
+    <!-- Elenco moduli -->
+    <div class="space-y-5">
+ 
+      <!-- Modulo 1 -->
+      <div class="p-7 md:p-8 rounded-3xl bg-white border border-ink/5 flex gap-6">
+        <span class="font-display text-3xl text-coral/40 shrink-0">01</span>
+        <div>
+          <h3 class="font-display text-xl text-ink mb-2">[PLACEHOLDER — Titolo modulo 1]</h3>
+          <p class="text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Breve descrizione di cosa tratta il modulo]</p>
+          <ul class="text-sm text-ink/60 space-y-1">
+            <li>— [PLACEHOLDER — Lezione 1.1]</li>
+            <li>— [PLACEHOLDER — Lezione 1.2]</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Modulo 2 -->
+      <div class="p-7 md:p-8 rounded-3xl bg-white border border-ink/5 flex gap-6">
+        <span class="font-display text-3xl text-coral/40 shrink-0">02</span>
+        <div>
+          <h3 class="font-display text-xl text-ink mb-2">[PLACEHOLDER — Titolo modulo 2]</h3>
+          <p class="text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Breve descrizione di cosa tratta il modulo]</p>
+          <ul class="text-sm text-ink/60 space-y-1">
+            <li>— [PLACEHOLDER — Lezione 2.1]</li>
+            <li>— [PLACEHOLDER — Lezione 2.2]</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Modulo 3 -->
+      <div class="p-7 md:p-8 rounded-3xl bg-white border border-ink/5 flex gap-6">
+        <span class="font-display text-3xl text-coral/40 shrink-0">03</span>
+        <div>
+          <h3 class="font-display text-xl text-ink mb-2">[PLACEHOLDER — Titolo modulo 3]</h3>
+          <p class="text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Breve descrizione di cosa tratta il modulo]</p>
+          <ul class="text-sm text-ink/60 space-y-1">
+            <li>— [PLACEHOLDER — Lezione 3.1]</li>
+            <li>— [PLACEHOLDER — Lezione 3.2]</li>
+          </ul>
+        </div>
+      </div>
+ 
+      <!-- Modulo 4 (aggiungere/rimuovere copiando questo blocco secondo il programma reale) -->
+      <div class="p-7 md:p-8 rounded-3xl bg-white border border-ink/5 flex gap-6">
+        <span class="font-display text-3xl text-coral/40 shrink-0">04</span>
+        <div>
+          <h3 class="font-display text-xl text-ink mb-2">[PLACEHOLDER — Titolo modulo 4]</h3>
+          <p class="text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Breve descrizione di cosa tratta il modulo]</p>
+          <ul class="text-sm text-ink/60 space-y-1">
+            <li>— [PLACEHOLDER — Lezione 4.1]</li>
+            <li>— [PLACEHOLDER — Lezione 4.2]</li>
+          </ul>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     BONUS
+     ⚠️ PLACEHOLDER: elencare tutti i bonus reali inclusi.
+     I Bonus Fast Action vanno evidenziati in un colore diverso
+     (qui: arancio) e RIMOSSI quando scadono — promemoria da
+     tenere d'occhio ad ogni lancio.
+     ========================================================= -->
+<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-14">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">In più</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "E per completare il percorso, ricevi anche"]
+      </h2>
+    </div>
+ 
+    <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-8">
+ 
+      <!-- Bonus 1 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <p class="text-xs uppercase tracking-wide text-sage font-semibold mb-3">Bonus 1</p>
+        <h3 class="font-display text-2xl text-ink mb-3">[PLACEHOLDER — Nome bonus 1]</h3>
+        <p class="text-ink/70 leading-relaxed mb-4">[PLACEHOLDER — Cosa contiene e perché è utile]</p>
+        <p class="text-sm text-ink/50">Valore: [PLACEHOLDER — es. "€XX"]</p>
+      </div>
+ 
+      <!-- Bonus 2 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <p class="text-xs uppercase tracking-wide text-sage font-semibold mb-3">Bonus 2</p>
+        <h3 class="font-display text-2xl text-ink mb-3">[PLACEHOLDER — Nome bonus 2]</h3>
+        <p class="text-ink/70 leading-relaxed mb-4">[PLACEHOLDER — Cosa contiene e perché è utile]</p>
+        <p class="text-sm text-ink/50">Valore: [PLACEHOLDER — es. "€XX"]</p>
+      </div>
+ 
+      <!-- Bonus 3 -->
+      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
+        <p class="text-xs uppercase tracking-wide text-sage font-semibold mb-3">Bonus 3</p>
+        <h3 class="font-display text-2xl text-ink mb-3">[PLACEHOLDER — Nome bonus 3]</h3>
+        <p class="text-ink/70 leading-relaxed mb-4">[PLACEHOLDER — Cosa contiene e perché è utile]</p>
+        <p class="text-sm text-ink/50">Valore: [PLACEHOLDER — es. "€XX"]</p>
+      </div>
+ 
+      <!-- BONUS FAST ACTION — colore differenziato (arancio), da rimuovere a scadenza -->
+      <div class="p-8 rounded-3xl bg-orange/10 border-2 border-orange">
+        <p class="text-xs uppercase tracking-wide text-orange font-bold mb-3">⚡ Bonus Fast Action — scade il [DATA]</p>
+        <h3 class="font-display text-2xl text-ink mb-3">[PLACEHOLDER — Nome bonus fast action]</h3>
+        <p class="text-ink/70 leading-relaxed mb-4">[PLACEHOLDER — Cosa contiene e perché è utile]</p>
+        <p class="text-sm text-ink/50">Valore: [PLACEHOLDER — es. "€XX"]</p>
+      </div>
+ 
+    </div>
+ 
+    <!-- ⚠️ Promemoria interno (NON visibile in pagina): rimuovere il box
+         Fast Action qui sopra non appena scade la finestra promozionale. -->
+ 
+  </div>
+</section>
+
+<!-- =========================================================
+     PRICING TABLE
+     ⚠️ PLACEHOLDER: pacchetti, contenuti riga per riga, prezzi
+     e date da sostituire con i valori reali forniti dalla
+     cliente. Il timer è collegato a una data placeholder in
+     fondo al file (cercare "PRICING_DEADLINE").
+     ========================================================= -->
+<section id="pricing" class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-6 text-center mx-auto">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Scegli il tuo pacchetto</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink mb-4">
+        [PLACEHOLDER — Titolo sezione, es. "Il pacchetto giusto per il punto in cui sei ora"]
+      </h2>
+      <p class="text-ink/60">[PLACEHOLDER — Es. "Questa offerta scade tra:"]</p>
+    </div>
+ 
+    <!-- Timer countdown -->
+    <div id="pricing-timer" class="flex justify-center gap-4 md:gap-6 mb-16">
+      <div class="text-center">
+        <div class="w-16 md:w-20 h-16 md:h-20 rounded-2xl bg-white border border-ink/10 flex items-center justify-center font-display text-2xl md:text-3xl text-coral" data-unit="days">--</div>
+        <p class="text-xs text-ink/50 mt-2">giorni</p>
+      </div>
+      <div class="text-center">
+        <div class="w-16 md:w-20 h-16 md:h-20 rounded-2xl bg-white border border-ink/10 flex items-center justify-center font-display text-2xl md:text-3xl text-coral" data-unit="hours">--</div>
+        <p class="text-xs text-ink/50 mt-2">ore</p>
+      </div>
+      <div class="text-center">
+        <div class="w-16 md:w-20 h-16 md:h-20 rounded-2xl bg-white border border-ink/10 flex items-center justify-center font-display text-2xl md:text-3xl text-coral" data-unit="minutes">--</div>
+        <p class="text-xs text-ink/50 mt-2">minuti</p>
+      </div>
+      <div class="text-center">
+        <div class="w-16 md:w-20 h-16 md:h-20 rounded-2xl bg-white border border-ink/10 flex items-center justify-center font-display text-2xl md:text-3xl text-coral" data-unit="seconds">--</div>
+        <p class="text-xs text-ink/50 mt-2">secondi</p>
+      </div>
+    </div>
+ 
+    <div class="grid md:grid-cols-3 gap-6 md:gap-8 items-start">
+ 
+      <!-- BASE -->
+      <div class="p-8 rounded-3xl bg-white border border-ink/10">
+        <h3 class="font-display text-2xl text-ink mb-2">Base</h3>
+        <p class="text-ink/60 text-sm mb-6">[PLACEHOLDER — a chi è rivolto questo pacchetto]</p>
+        <div class="mb-6">
+          <p class="font-display text-4xl text-coral">€[PLACEHOLDER]</p>
+          <p class="text-xs text-ink/50 mt-1">[PLACEHOLDER — prezzo attivo dal DD/MM]</p>
+          <p class="text-xs text-ink/40 line-through mt-1">[PLACEHOLDER — prezzo 2, se previsto un aumento dopo una data]</p>
+        </div>
+        <ul class="space-y-3 mb-8 text-sm text-ink/70">
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 1]</li>
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 2]</li>
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 3]</li>
+        </ul>
+        <a href="#" class="block text-center bg-ink/5 text-ink font-semibold px-6 py-3 rounded-full hover:bg-ink/10 transition-colors">
+          [PLACEHOLDER — CTA, es. "Parto da qui"]
+        </a>
+      </div>
+ 
+      <!-- MEDIO (evidenziato come consigliato) -->
+      <div class="p-8 rounded-3xl bg-white border-2 border-coral relative md:-translate-y-4 shadow-xl shadow-coral/10">
+        <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-coral text-white text-xs font-semibold px-4 py-1.5 rounded-full">
+          [PLACEHOLDER — es. "Più scelto"]
+        </span>
+        <h3 class="font-display text-2xl text-ink mb-2">Medio</h3>
+        <p class="text-ink/60 text-sm mb-6">[PLACEHOLDER — a chi è rivolto questo pacchetto]</p>
+        <div class="mb-6">
+          <p class="font-display text-4xl text-coral">€[PLACEHOLDER]</p>
+          <p class="text-xs text-ink/50 mt-1">[PLACEHOLDER — prezzo attivo dal DD/MM]</p>
+          <p class="text-xs text-ink/40 line-through mt-1">[PLACEHOLDER — prezzo 2, se previsto un aumento dopo una data]</p>
+        </div>
+        <ul class="space-y-3 mb-8 text-sm text-ink/70">
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — tutto il pacchetto Base, più:]</li>
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 2]</li>
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 3]</li>
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 4]</li>
+        </ul>
+        <a href="#" class="block text-center bg-coral text-white font-semibold px-6 py-3 rounded-full hover:bg-orange transition-colors">
+          [PLACEHOLDER — CTA, es. "Scelgo questo"]
+        </a>
+      </div>
+ 
+      <!-- AVANZATO -->
+      <div class="p-8 rounded-3xl bg-white border border-ink/10">
+        <h3 class="font-display text-2xl text-ink mb-2">Avanzato</h3>
+        <p class="text-ink/60 text-sm mb-6">[PLACEHOLDER — a chi è rivolto questo pacchetto]</p>
+        <div class="mb-6">
+          <p class="font-display text-4xl text-coral">€[PLACEHOLDER]</p>
+          <p class="text-xs text-ink/50 mt-1">[PLACEHOLDER — prezzo attivo dal DD/MM]</p>
+          <p class="text-xs text-ink/40 line-through mt-1">[PLACEHOLDER — prezzo 2, se previsto un aumento dopo una data]</p>
+        </div>
+        <ul class="space-y-3 mb-8 text-sm text-ink/70">
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — tutto il pacchetto Medio, più:]</li>
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 2]</li>
+          <li class="flex gap-2"><span class="text-sage">✓</span>[PLACEHOLDER — cosa include riga 3]</li>
+        </ul>
+        <a href="#" class="block text-center bg-ink/5 text-ink font-semibold px-6 py-3 rounded-full hover:bg-ink/10 transition-colors">
+          [PLACEHOLDER — CTA, es. "Vado a fondo"]
+        </a>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CASI STUDIO
+     ⚠️ PLACEHOLDER: prima di ogni lancio valutare se ci sono
+     nuovi casi studio migliori da inserire al posto di questi.
+     Vale la stessa dicitura obbligatoria sulla fonte del
+     feedback usata per le recensioni scritte/video.
+     ========================================================= -->
+<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-16">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Casi studio</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Da dove sono partite, dove sono arrivate"]
+      </h2>
+    </div>
+ 
+    <div class="space-y-8 mb-6">
+ 
+      <!-- Caso studio esteso 1 -->
+      <div class="grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-8 md:gap-10 p-8 md:p-10 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="aspect-[4/3] rounded-2xl bg-white border border-ink/10 flex items-center justify-center">
+          <span class="text-ink/40 text-sm text-center px-6">[PLACEHOLDER — Foto/prima-dopo caso studio 1]</span>
+        </div>
+        <div>
+          <h3 class="font-display text-xl text-ink mb-1">[PLACEHOLDER — Nome]</h3>
+          <p class="text-sm text-sage font-semibold mb-4">[PLACEHOLDER — Ruolo/situazione di partenza]</p>
+          <p class="text-ink/70 leading-relaxed">
+            [PLACEHOLDER — Racconto: da dove partiva, quale ostacolo aveva, cosa ha applicato
+            del corso, cosa ha ottenuto concretamente dopo]
+          </p>
+        </div>
+      </div>
+ 
+      <!-- Caso studio esteso 2 -->
+      <div class="grid md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] gap-8 md:gap-10 p-8 md:p-10 rounded-3xl bg-peachLight border border-ink/5">
+        <div class="aspect-[4/3] rounded-2xl bg-white border border-ink/10 flex items-center justify-center">
+          <span class="text-ink/40 text-sm text-center px-6">[PLACEHOLDER — Foto/prima-dopo caso studio 2]</span>
+        </div>
+        <div>
+          <h3 class="font-display text-xl text-ink mb-1">[PLACEHOLDER — Nome]</h3>
+          <p class="text-sm text-sage font-semibold mb-4">[PLACEHOLDER — Ruolo/situazione di partenza]</p>
+          <p class="text-ink/70 leading-relaxed">
+            [PLACEHOLDER — Racconto: da dove partiva, quale ostacolo aveva, cosa ha applicato
+            del corso, cosa ha ottenuto concretamente dopo]
+          </p>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <p class="text-sm text-ink/40 max-w-2xl">
+      [PLACEHOLDER — Dicitura sulla fonte: da dove sono stati raccolti questi casi studio,
+      come sono stati invitati, a cosa si riferiscono, eventuale contropartita offerta.]
+    </p>
+ 
+  </div>
+</section>
+ 
+<!-- =========================================================
+     CASI STUDIO IN BREVE
+     ⚠️ PLACEHOLDER: prima di ogni lancio valutare se ci sono
+     altri casi studio "minori" da aggiungere all'elenco.
+     ========================================================= -->
+<section class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-6xl mx-auto">
+ 
+    <div class="max-w-2xl mb-14">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">E non solo loro</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Altri risultati, in breve"]
+      </h2>
+    </div>
+ 
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+ 
+      <div class="p-6 rounded-2xl bg-white border border-ink/5">
+        <p class="text-sm text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Risultato in breve, una frase]</p>
+        <p class="text-xs text-ink/50 font-semibold">— [PLACEHOLDER — Nome]</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-ink/5">
+        <p class="text-sm text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Risultato in breve, una frase]</p>
+        <p class="text-xs text-ink/50 font-semibold">— [PLACEHOLDER — Nome]</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-ink/5">
+        <p class="text-sm text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Risultato in breve, una frase]</p>
+        <p class="text-xs text-ink/50 font-semibold">— [PLACEHOLDER — Nome]</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-ink/5">
+        <p class="text-sm text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Risultato in breve, una frase]</p>
+        <p class="text-xs text-ink/50 font-semibold">— [PLACEHOLDER — Nome]</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-ink/5">
+        <p class="text-sm text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Risultato in breve, una frase]</p>
+        <p class="text-xs text-ink/50 font-semibold">— [PLACEHOLDER — Nome]</p>
+      </div>
+      <div class="p-6 rounded-2xl bg-white border border-ink/5">
+        <p class="text-sm text-ink/70 leading-relaxed mb-3">[PLACEHOLDER — Risultato in breve, una frase]</p>
+        <p class="text-xs text-ink/50 font-semibold">— [PLACEHOLDER — Nome]</p>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     CITAZIONE CTA
+     ⚠️ PLACEHOLDER: citazione che sproni l'utente all'azione.
+     Deve essere breve, personale, non un altro riassunto
+     dell'offerta — qui il tono è quello di una spinta finale.
+     ========================================================= -->
+<section class="relative bg-coral py-24 md:py-32 px-6 md:px-10 text-center overflow-hidden">
+ 
+  <div class="pointer-events-none absolute inset-0 -z-0">
+    <div class="bg-blob absolute -top-24 left-1/4 w-[30rem] h-[30rem] rounded-full blur-[100px]"
+         style="background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);"></div>
+  </div>
+ 
+  <div class="relative z-10 max-w-3xl mx-auto">
+    <p class="font-display italic text-2xl md:text-4xl leading-snug text-white mb-10">
+      "[PLACEHOLDER — Citazione breve e personale che sproni all'azione, es. una frase
+      sul momento in cui si smette di rimandare e si inizia]"
+    </p>
+    <a href="#pricing"
+       class="inline-flex items-center gap-3 bg-white text-coral font-semibold px-8 py-4 rounded-full
+              hover:bg-peachLight transition-colors duration-300">
+      [PLACEHOLDER — CTA, es. "Voglio iniziare ora"]
+      <span class="transition-transform duration-300">→</span>
+    </a>
+  </div>
+</section>
+
+<!-- =========================================================
+     FAQ
+     ⚠️ PLACEHOLDER: le domande devono rispecchiare le obiezioni
+     e i dubbi più frequenti del pubblico target reale — da
+     raccogliere con la cliente (messaggi ricevuti, domande in
+     DM, dubbi emersi nelle call di vendita, ecc.).
+     ========================================================= -->
+<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-3xl mx-auto">
+ 
+    <div class="mb-14">
+      <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Domande frequenti</p>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
+        [PLACEHOLDER — Titolo sezione, es. "Ancora qualche dubbio?"]
+      </h2>
+    </div>
+ 
+    <div class="space-y-3" id="faq-list">
+ 
+      <!-- FAQ 1 -->
+      <div class="faq-item rounded-2xl bg-peachLight border border-ink/5 overflow-hidden">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="font-semibold text-ink">[PLACEHOLDER — Domanda/obiezione frequente 1]</span>
+          <span class="faq-icon text-coral text-xl shrink-0 transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-panel px-6 text-ink/70 leading-relaxed" style="max-height:0; overflow:hidden; transition:max-height .3s ease, padding .3s ease;">
+          <p class="pb-6">[PLACEHOLDER — Risposta chiara e diretta alla domanda 1]</p>
+        </div>
+      </div>
+ 
+      <!-- FAQ 2 -->
+      <div class="faq-item rounded-2xl bg-peachLight border border-ink/5 overflow-hidden">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="font-semibold text-ink">[PLACEHOLDER — Domanda/obiezione frequente 2]</span>
+          <span class="faq-icon text-coral text-xl shrink-0 transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-panel px-6 text-ink/70 leading-relaxed" style="max-height:0; overflow:hidden; transition:max-height .3s ease, padding .3s ease;">
+          <p class="pb-6">[PLACEHOLDER — Risposta chiara e diretta alla domanda 2]</p>
+        </div>
+      </div>
+ 
+      <!-- FAQ 3 -->
+      <div class="faq-item rounded-2xl bg-peachLight border border-ink/5 overflow-hidden">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="font-semibold text-ink">[PLACEHOLDER — Domanda/obiezione frequente 3]</span>
+          <span class="faq-icon text-coral text-xl shrink-0 transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-panel px-6 text-ink/70 leading-relaxed" style="max-height:0; overflow:hidden; transition:max-height .3s ease, padding .3s ease;">
+          <p class="pb-6">[PLACEHOLDER — Risposta chiara e diretta alla domanda 3]</p>
+        </div>
+      </div>
+ 
+      <!-- FAQ 4 -->
+      <div class="faq-item rounded-2xl bg-peachLight border border-ink/5 overflow-hidden">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="font-semibold text-ink">[PLACEHOLDER — Domanda/obiezione frequente 4]</span>
+          <span class="faq-icon text-coral text-xl shrink-0 transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-panel px-6 text-ink/70 leading-relaxed" style="max-height:0; overflow:hidden; transition:max-height .3s ease, padding .3s ease;">
+          <p class="pb-6">[PLACEHOLDER — Risposta chiara e diretta alla domanda 4]</p>
+        </div>
+      </div>
+ 
+      <!-- FAQ 5 -->
+      <div class="faq-item rounded-2xl bg-peachLight border border-ink/5 overflow-hidden">
+        <button type="button" class="faq-trigger w-full flex items-center justify-between gap-4 p-6 text-left">
+          <span class="font-semibold text-ink">[PLACEHOLDER — Domanda/obiezione frequente 5]</span>
+          <span class="faq-icon text-coral text-xl shrink-0 transition-transform duration-300">+</span>
+        </button>
+        <div class="faq-panel px-6 text-ink/70 leading-relaxed" style="max-height:0; overflow:hidden; transition:max-height .3s ease, padding .3s ease;">
+          <p class="pb-6">[PLACEHOLDER — Risposta chiara e diretta alla domanda 5]</p>
+        </div>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+ 
+ 
+<script src="script.js"></script>
+
+</body>
+</html>
