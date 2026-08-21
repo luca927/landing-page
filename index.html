@@ -53,21 +53,35 @@
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10 pt-10 pb-20 md:pt-14 md:pb-28">
 
-    <!-- Logo / nome accademia -->
-    <div class="flex items-center gap-3 mb-16 md:mb-24">
-      <span class="w-2 h-2 rounded-full bg-coral"></span>
-      <span class="font-display text-lg tracking-wide text-ink/90">Aurora Accademia Olistica</span>
-    </div>
+   <!-- Logo / Navbar -->
+<div class="flex items-center justify-between gap-6 mb-16 md:mb-24">
+  
+  <!-- Logo (piccolo) -->
+  <a href="#">
+    <img src="logo-nuovo.jpeg.jpeg" alt="Aurora Accademia Olistica" class="h-14 md:h-16 w-auto object-contain">
+  </a>
+
+  <!-- Menu di navigazione -->
+  <nav class="hidden md:flex items-center gap-8">
+    <a href="#risultati" class="text-sm font-medium text-ink/80 hover:text-coral transition-colors">Risultati</a>
+    <a href="#per-chi-e" class="text-sm font-medium text-ink/80 hover:text-coral transition-colors">Per chi è</a>
+    <a href="#programma" class="text-sm font-medium text-ink/80 hover:text-coral transition-colors">Programma</a>
+    <a href="#bonus" class="text-sm font-medium text-ink/80 hover:text-coral transition-colors">Bonus</a>
+    <a href="#pricing" class="text-sm font-medium text-ink/80 hover:text-coral transition-colors">Prezzi</a>
+    <a href="#faq" class="text-sm font-medium text-ink/80 hover:text-coral transition-colors">FAQ</a>
+  </nav>
+
+  <!-- Bottone CTA Menu (opzionale) -->
+  <a href="#pricing" class="hidden sm:inline-flex bg-coral/10 text-coral font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-coral hover:text-white transition-colors duration-300">
+    Prenota la Call
+  </a>
+
+</div>
 
     <div class="grid md:grid-cols-2 gap-14 md:gap-10 items-center">
 
       <!-- Colonna testo -->
       <div>
-        <!-- Slogan / claim del corso -->
-        <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-5">
-          Ritrova coraggio, sicurezza e fiducia in te
-        </p>
-
         <!-- Titolo del corso -->
         <h1 class="font-display text-4xl md:text-6xl leading-[1.08] mb-6 text-coral font-semibold">
           Il tuo Corpo come Bussola
@@ -75,14 +89,14 @@
 
         <!-- Offerta / grande promessa -->
         <p class="text-lg md:text-xl text-ink/80 leading-relaxed mb-10 max-w-lg">
-          Un percorso di 5 incontri che ti guida a vivere con maggiore libertà, comprendendo i segnali del tuo corpo e ascoltando le tue emozioni, senza tradirti di continuo ed avere paura di ferire chi ti sta vicino.
+          Ritrova coraggio, sicurezza e fiducia in te con un percorso di 5 incontri che ti guida a vivere con maggiore libertà, comprendendo i segnali del tuo corpo e ascoltando le tue emozioni, senza tradirti di continuo ed avere paura di ferire chi ti sta vicino. 
         </p>
 
-        <!-- CTA -->
-        <a href="#pricing"
-           class="group inline-flex items-center gap-3 bg-coral text-white font-body font-semibold
+       <!-- CTA -->
+        <a href="#programma"
+          class="group inline-flex items-center gap-3 bg-coral text-white font-body font-semibold
                   px-8 py-4 rounded-full hover:bg-orange transition-colors duration-300 shadow-lg shadow-coral/20">
-          Inizia il tuo percorso
+          Scopri di più sul percorso
           <span class="transition-transform duration-300 group-hover:translate-x-1">→</span>
         </a>
       </div>
@@ -103,62 +117,107 @@
 </header>
 
 <!-- =========================================================
-     RISULTATI
+     RISULTATI (PRIMA / DOPO)
      ========================================================= -->
-<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
-  <div class="max-w-6xl mx-auto">
+<section id="risultati" class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-5xl mx-auto">
 
     <div class="max-w-2xl mb-16">
       <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Risultati</p>
       <h2 class="font-display text-3xl md:text-5xl leading-tight text-ink">
-        Cosa otterrai durante il percorso
+        Dal blocco alla trasformazione
       </h2>
     </div>
 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-8 md:gap-10">
+    <!-- Layout a righe / confronto -->
+    <div class="space-y-6">
 
-      <!-- Card risultato 1 -->
-      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
-        <div class="w-11 h-11 rounded-full bg-coral/15 flex items-center justify-center mb-6">
-          <span class="w-3 h-3 rounded-full bg-coral"></span>
+      <!-- Blocco 1 -->
+      <div class="p-6 md:p-8 rounded-3xl bg-peachLight border border-ink/5 grid md:grid-cols-2 gap-6 items-center">
+        <!-- Sinistra: Paura / Problema -->
+        <div class="border-b md:border-b-0 md:border-r border-ink/10 pb-4 md:pb-0 md:pr-6">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral bg-coral/10 rounded-full mb-3">
+            Punto di partenza
+          </span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
+            Paura del futuro ed insicurezza economica
+          </h3>
         </div>
-        <h3 class="font-display text-xl font-semibold mb-3 text-ink">Paura del futuro ed insicurezza economica</h3>
-        <p class="text-ink/80 leading-relaxed">
-          Costruisci una base interna più stabile e sviluppa maggiore fiducia nella vita e nelle tue risorse.
-        </p>
+        <!-- Destra: Risultato / Soluzione -->
+        <div class="md:pl-2">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sage bg-sage/15 rounded-full mb-3">
+            Cosa otterrai
+          </span>
+          <p class="text-ink/80 leading-relaxed font-medium">
+            Costruisci una base interna più stabile e sviluppa maggiore fiducia nella vita e nelle tue risorse.
+          </p>
+        </div>
       </div>
 
-      <!-- Card risultato 2 -->
-      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
-        <div class="w-11 h-11 rounded-full bg-sage/15 flex items-center justify-center mb-6">
-          <span class="w-3 h-3 rounded-full bg-sage"></span>
+      <!-- Blocco 2 -->
+      <div class="p-6 md:p-8 rounded-3xl bg-peachLight border border-ink/5 grid md:grid-cols-2 gap-6 items-center">
+        <!-- Sinistra: Paura / Problema -->
+        <div class="border-b md:border-b-0 md:border-r border-ink/10 pb-4 md:pb-0 md:pr-6">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral bg-coral/10 rounded-full mb-3">
+            Punto di partenza
+          </span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
+            Difficoltà a provare piacere e senso di colpa
+          </h3>
         </div>
-        <h3 class="font-display text-xl font-semibold mb-3 text-ink">Difficoltà a provare piacere e senso di colpa</h3>
-        <p class="text-ink/80 leading-relaxed">
-          Ascolta i tuoi desideri e concediti lo spazio che ti serve, senza sentirti in colpa.
-        </p>
+        <!-- Destra: Risultato / Soluzione -->
+        <div class="md:pl-2">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sage bg-sage/15 rounded-full mb-3">
+            Cosa otterrai
+          </span>
+          <p class="text-ink/80 leading-relaxed font-medium">
+            Ascolta i tuoi desideri e concediti lo spazio che ti serve, senza sentirti in colpa.
+          </p>
+        </div>
       </div>
 
-      <!-- Card risultato 3 -->
-      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
-        <div class="w-11 h-11 rounded-full bg-orange/15 flex items-center justify-center mb-6">
-          <span class="w-3 h-3 rounded-full bg-orange"></span>
+      <!-- Blocco 3 -->
+      <div class="p-6 md:p-8 rounded-3xl bg-peachLight border border-ink/5 grid md:grid-cols-2 gap-6 items-center">
+        <!-- Sinistra: Paura / Problema -->
+        <div class="border-b md:border-b-0 md:border-r border-ink/10 pb-4 md:pb-0 md:pr-6">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral bg-coral/10 rounded-full mb-3">
+            Punto di partenza
+          </span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
+            Bassa autostima e paura del giudizio
+          </h3>
         </div>
-        <h3 class="font-display text-xl font-semibold mb-3 text-ink">Bassa autostima e paura del giudizio</h3>
-        <p class="text-ink/80 leading-relaxed">
-          Sviluppa centratura, forza interiore e identità personale.
-        </p>
+        <!-- Destra: Risultato / Soluzione -->
+        <div class="md:pl-2">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sage bg-sage/15 rounded-full mb-3">
+            Cosa otterrai
+          </span>
+          <p class="text-ink/80 leading-relaxed font-medium">
+            Sviluppa centratura, forza interiore e identità personale.
+          </p>
+        </div>
       </div>
 
-      <!-- Card risultato 4 -->
-      <div class="p-8 rounded-3xl bg-peachLight border border-ink/5">
-        <div class="w-11 h-11 rounded-full bg-coral/15 flex items-center justify-center mb-6">
-          <span class="w-3 h-3 rounded-full bg-coral"></span>
+      <!-- Blocco 4 -->
+      <div class="p-6 md:p-8 rounded-3xl bg-peachLight border border-ink/5 grid md:grid-cols-2 gap-6 items-center">
+        <!-- Sinistra: Paura / Problema -->
+        <div class="border-b md:border-b-0 md:border-r border-ink/10 pb-4 md:pb-0 md:pr-6">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-coral bg-coral/10 rounded-full mb-3">
+            Punto di partenza
+          </span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
+            Paura di esporti e difficoltà a dire no
+          </h3>
         </div>
-        <h3 class="font-display text-xl font-semibold mb-3 text-ink">Paura di esporti e difficoltà a dire no</h3>
-        <p class="text-ink/80 leading-relaxed">
-          Riconosci e comunica ciò che provi, con maggiore chiarezza, senza aver paura di ferire chi ti sta vicino.
-        </p>
+        <!-- Destra: Risultato / Soluzione -->
+        <div class="md:pl-2">
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-sage bg-sage/15 rounded-full mb-3">
+            Cosa otterrai
+          </span>
+          <p class="text-ink/80 leading-relaxed font-medium">
+            Riconosci e comunica ciò che provi, con maggiore chiarezza, senza aver paura di ferire chi ti sta vicino.
+          </p>
+        </div>
       </div>
 
     </div>
@@ -168,7 +227,7 @@
 <!-- =========================================================
      PER CHI È
      ========================================================= -->
-<section class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+<section id="per-chi-e" class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
 
     <div class="max-w-2xl mb-16">
@@ -309,14 +368,19 @@
         </div>
  
         <!-- Riga statistiche -->
-        <div class="grid grid-cols-2 gap-6 mb-8">
-          <div>
-            <p class="font-display text-3xl md:text-4xl text-coral">11</p>
-            <p class="text-sm text-ink/50 mt-1">Anni di esperienza</p>
-          </div>
-          <div>
-            <p class="font-display text-3xl md:text-4xl text-coral">5</p>
-            <p class="text-sm text-ink/50 mt-1">Moduli esperienziali</p>
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8 pt-4 border-t border-ink/10">
+            <div>
+              <p class="font-display text-3xl md:text-4xl text-coral font-semibold">11</p>
+              <p class="text-sm text-ink/70 mt-1">Anni di esperienza</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl md:text-4xl text-coral font-semibold">+20</p>
+              <p class="text-sm text-ink/70 mt-1">Persone accompagnate</p>
+            </div>
+            <div>
+              <p class="font-display text-3xl md:text-4xl text-coral font-semibold">+11k</p>
+              <p class="text-sm text-ink/70 mt-1">Corpi toccati</p>
+            </div>
           </div>
         </div>
       </div>
@@ -326,10 +390,10 @@
 </section>
 
 <!-- =========================================================
-     PROGRAMMA DEL CORSO
+     PROGRAMMA DEL CORSO (ACCORDION / MENU A TENDINA)
      ========================================================= -->
-<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
-  <div class="max-w-6xl mx-auto">
+<section id="programma" class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+  <div class="max-w-4xl mx-auto">
  
     <div class="max-w-2xl mb-12">
       <p class="uppercase tracking-[0.2em] text-sm text-sage font-semibold mb-4">Il percorso</p>
@@ -338,8 +402,8 @@
       </h2>
     </div>
  
-    <!-- Cosa è incluso in breve -->
-    <div class="flex flex-wrap gap-4 mb-14">
+    <!-- In breve -->
+    <div class="flex flex-wrap gap-4 mb-12">
       <div class="px-6 py-3 rounded-full bg-peachLight border border-ink/10 text-sm text-ink/70">
         <span class="font-semibold text-coral">5</span> moduli
       </div>
@@ -347,209 +411,244 @@
         <span class="font-semibold text-coral">5</span> weekend dal vivo
       </div>
       <div class="px-6 py-3 rounded-full bg-peachLight border border-ink/10 text-sm text-ink/70">
-        <span class="font-semibold text-coral">5</span> call online di integrazione
+        <span class="font-semibold text-coral">6</span> call online di integrazione
       </div>
     </div>
  
-    <!-- Elenco moduli -->
-    <div class="space-y-8">
+    <!-- Elenco Moduli ad Accordion -->
+    <div class="space-y-4">
  
       <!-- Modulo 1 -->
-      <div class="p-7 md:p-8 rounded-3xl bg-peachLight border border-ink/5 flex flex-col md:flex-row gap-6">
-        <span class="font-display text-3xl text-coral shrink-0">MODULO 1</span>
-        <div>
-          <p class="text-sm text-sage font-semibold mb-1">24/25 Ottobre 2026</p>
-          <h3 class="font-display text-2xl text-ink mb-2">Io sono il mio centro</h3>
-          <p class="italic text-ink/70 mb-4">"Se non ho un centro stabile, non posso radicarmi davvero né aprirmi con sicurezza."</p>
-
-          <div class="grid md:grid-cols-3 gap-6 text-sm text-ink/80 mt-4">
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>Identità e potere personale</li>
-                <li>Confini sani</li>
-                <li>Autostima e valore personale</li>
-                <li>Bisogno di approvazione</li>
-                <li>Rabbia, vergogna e senso di impotenza</li>
-                <li>Paura del giudizio</li>
-                <li>Capacità di scegliere e prendere decisioni</li>
-                <li>Responsabilità personale</li>
-              </ul>
+      <details class="group rounded-3xl bg-peachLight border border-ink/5 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none select-none">
+          <div class="pr-4">
+            <div class="flex items-center gap-3 mb-1">
+              <span class="font-display font-semibold text-coral text-sm tracking-wider uppercase">Modulo 1</span>
+              <span class="text-xs text-sage font-semibold bg-sage/15 px-3 py-0.5 rounded-full">24/25 Ottobre 2026</span>
             </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
-              <p class="mb-2">Legame tra emozioni, sistema digestivo e diaframma (stomaco, fegato, pancreas, intestino tenue, tensioni diaframmatiche).</p>
-              <p>Come il corpo reagisce quando ci sentiamo sotto pressione, svalutati o incapaci di occupare il nostro posto.</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>si sente spesso bloccato</li>
-                <li>ha molte idee, ma fatica ad agire</li>
-                <li>cerca continuamente conferme dagli altri</li>
-                <li>si sente piccolo rispetto alle proprie potenzialità</li>
-                <li>fa fatica a dire "questa sono io"</li>
-              </ul>
-            </div>
+            <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Io sono il mio centro</h3>
+            <p class="italic text-ink/70 text-sm mt-1">"Se non ho un centro stabile, non posso radicarmi davvero né aprirmi con sicurezza."</p>
+          </div>
+          <span class="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center text-coral text-xl shrink-0 group-open:rotate-180 transition-transform duration-300">
+            ↓
+          </span>
+        </summary>
+        
+        <div class="px-6 pb-8 md:px-8 border-t border-ink/5 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Identità e potere personale</li>
+              <li>Confini sani</li>
+              <li>Autostima e valore personale</li>
+              <li>Bisogno di approvazione</li>
+              <li>Rabbia, vergogna e senso di impotenza</li>
+              <li>Paura del giudizio</li>
+              <li>Capacità di scegliere e prendere decisioni</li>
+              <li>Responsabilità personale</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
+            <p class="mb-2">Legame tra emozioni, sistema digestivo e diaframma (stomaco, fegato, pancreas, intestino tenue, tensioni diaframmatiche).</p>
+            <p>Come il corpo reagisce quando ci sentiamo sotto pressione, svalutati o incapaci di occupare il nostro posto.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>si sente spesso bloccato</li>
+              <li>ha molte idee, ma fatica ad agire</li>
+              <li>cerca continuamente conferme dagli altri</li>
+              <li>si sente piccolo rispetto alle proprie potenzialità</li>
+              <li>fa fatica a dire "questa sono io"</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </details>
  
       <!-- Modulo 2 -->
-      <div class="p-7 md:p-8 rounded-3xl bg-peachLight border border-ink/5 flex flex-col md:flex-row gap-6">
-        <span class="font-display text-3xl text-coral shrink-0">MODULO 2</span>
-        <div>
-          <p class="text-sm text-sage font-semibold mb-1">21/22 Novembre 2026</p>
-          <h3 class="font-display text-2xl text-ink mb-2">Do voce a chi sono</h3>
-          <p class="italic text-ink/70 mb-4">"Se non mi permetto di esprimermi, la mia verità resta bloccata nel corpo."</p>
-
-          <div class="grid md:grid-cols-3 gap-6 text-sm text-ink/80 mt-4">
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>Comunicazione autentica</li>
-                <li>Espressione personale</li>
-                <li>Verità e maschere sociali</li>
-                <li>Paura del conflitto</li>
-                <li>Difficoltà a chiedere ciò di cui si ha bisogno</li>
-                <li>Dire no senza sentirsi in colpa</li>
-                <li>Ascolto di sé e degli altri</li>
-              </ul>
+      <details class="group rounded-3xl bg-peachLight border border-ink/5 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none select-none">
+          <div class="pr-4">
+            <div class="flex items-center gap-3 mb-1">
+              <span class="font-display font-semibold text-coral text-sm tracking-wider uppercase">Modulo 2</span>
+              <span class="text-xs text-sage font-semibold bg-sage/15 px-3 py-0.5 rounded-full">21/22 Novembre 2026</span>
             </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
-              <p class="mb-2">Rapporto tra emozioni non espresse e tensioni corporee (gola, collo, mandibola, spalle, respirazione).</p>
-              <p>Come il corpo trattiene parole, emozioni e bisogni rimasti inespressi.</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>dice sempre "va bene"</li>
-                <li>evita discussioni e confronti</li>
-                <li>ha paura di deludere gli altri</li>
-                <li>si sente incompreso</li>
-                <li>vorrebbe esprimersi, ma si blocca</li>
-              </ul>
-            </div>
+            <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Do voce a chi sono</h3>
+            <p class="italic text-ink/70 text-sm mt-1">"Se non mi permetto di esprimermi, la mia verità resta bloccata nel corpo."</p>
+          </div>
+          <span class="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center text-coral text-xl shrink-0 group-open:rotate-180 transition-transform duration-300">
+            ↓
+          </span>
+        </summary>
+        
+        <div class="px-6 pb-8 md:px-8 border-t border-ink/5 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Comunicazione autentica</li>
+              <li>Espressione personale</li>
+              <li>Verità e maschere sociali</li>
+              <li>Paura del conflitto</li>
+              <li>Difficoltà a chiedere ciò di cui si ha bisogno</li>
+              <li>Dire no senza sentirsi in colpa</li>
+              <li>Ascolto di sé e degli altri</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
+            <p class="mb-2">Rapporto tra emozioni non espresse e tensioni corporee (gola, collo, mandibola, spalle, respirazione).</p>
+            <p>Come il corpo trattiene parole, emozioni e bisogni rimasti inespressi.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>dice sempre "va bene"</li>
+              <li>evita discussioni e confronti</li>
+              <li>ha paura di deludere gli altri</li>
+              <li>si sente incompreso</li>
+              <li>vorrebbe esprimersi, ma si blocca</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </details>
 
       <!-- Modulo 3 -->
-      <div class="p-7 md:p-8 rounded-3xl bg-peachLight border border-ink/5 flex flex-col md:flex-row gap-6">
-        <span class="font-display text-3xl text-coral shrink-0">MODULO 3</span>
-        <div>
-          <p class="text-sm text-sage font-semibold mb-1">23/24 Gennaio 2027</p>
-          <h3 class="font-display text-2xl text-ink mb-2">Ho diritto di esserci</h3>
-          <p class="italic text-ink/70 mb-4">"Se non ho una base stabile, non posso accogliere né sostenere ciò che arriva."</p>
-
-          <div class="grid md:grid-cols-3 gap-6 text-sm text-ink/80 mt-4">
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>Sicurezza interiore</li>
-                <li>Radicamento</li>
-                <li>Sopravvivenza e fiducia</li>
-                <li>Rapporto con il denaro</li>
-                <li>Rapporto con i genitori</li>
-                <li>Appartenenza</li>
-                <li>Stabilità emotiva</li>
-              </ul>
+      <details class="group rounded-3xl bg-peachLight border border-ink/5 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none select-none">
+          <div class="pr-4">
+            <div class="flex items-center gap-3 mb-1">
+              <span class="font-display font-semibold text-coral text-sm tracking-wider uppercase">Modulo 3</span>
+              <span class="text-xs text-sage font-semibold bg-sage/15 px-3 py-0.5 rounded-full">23/24 Gennaio 2027</span>
             </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
-              <p class="mb-2">Piedi, gambe, ginocchia, anche, pavimento pelvico.</p>
-              <p>Come il corpo reagisce quando vive costantemente in allerta.</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>vive nell'ansia per il futuro</li>
-                <li>sente di non avere un posto nel mondo</li>
-                <li>fatica a sentirsi al sicuro</li>
-                <li>vive continui stati di preoccupazione</li>
-                <li>si sente sempre "in sopravvivenza"</li>
-              </ul>
-            </div>
+            <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Ho diritto di esserci</h3>
+            <p class="italic text-ink/70 text-sm mt-1">"Se non ho una base stabile, non posso accogliere né sostenere ciò che arriva."</p>
+          </div>
+          <span class="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center text-coral text-xl shrink-0 group-open:rotate-180 transition-transform duration-300">
+            ↓
+          </span>
+        </summary>
+        
+        <div class="px-6 pb-8 md:px-8 border-t border-ink/5 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Sicurezza interiore</li>
+              <li>Radicamento</li>
+              <li>Sopravvivenza e fiducia</li>
+              <li>Rapporto con il denaro</li>
+              <li>Rapporto con i genitori</li>
+              <li>Appartenenza</li>
+              <li>Stabilità emotiva</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
+            <p class="mb-2">Piedi, gambe, ginocchia, anche, pavimento pelvico.</p>
+            <p>Come il corpo reagisce quando vive costantemente in allerta.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>vive nell'ansia per il futuro</li>
+              <li>sente di non avere un posto nel mondo</li>
+              <li>fatica a sentirsi al sicuro</li>
+              <li>vive continui stati di preoccupazione</li>
+              <li>si sente sempre "in sopravvivenza"</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </details>
 
       <!-- Modulo 4 -->
-      <div class="p-7 md:p-8 rounded-3xl bg-peachLight border border-ink/5 flex flex-col md:flex-row gap-6">
-        <span class="font-display text-3xl text-coral shrink-0">MODULO 4</span>
-        <div>
-          <p class="text-sm text-sage font-semibold mb-1">20/21 Febbraio 2027</p>
-          <h3 class="font-display text-2xl text-ink mb-2">Mi concedo il piacere</h3>
-          <p class="italic text-ink/70 mb-4">"Se non mi permetto di provare piacere, rischio di sopravvivere alla vita invece che viverla."</p>
-
-          <div class="grid md:grid-cols-3 gap-6 text-sm text-ink/80 mt-4">
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>Piacere, creatività e desiderio</li>
-                <li>Energia vitale</li>
-                <li>Colpa e vergogna</li>
-                <li>Relazione con il corpo</li>
-                <li>Relazione con il femminile e il maschile</li>
-              </ul>
+      <details class="group rounded-3xl bg-peachLight border border-ink/5 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none select-none">
+          <div class="pr-4">
+            <div class="flex items-center gap-3 mb-1">
+              <span class="font-display font-semibold text-coral text-sm tracking-wider uppercase">Modulo 4</span>
+              <span class="text-xs text-sage font-semibold bg-sage/15 px-3 py-0.5 rounded-full">20/21 Febbraio 2027</span>
             </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
-              <p class="mb-2">Bacino, zona lombare, organi riproduttivi, liquidi corporei.</p>
-              <p>Il modo in cui il corpo trattiene emozioni, desideri e vitalità.</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>vive sempre nel dovere</li>
-                <li>fatica a divertirsi</li>
-                <li>si sente spento o scollegato dal piacere</li>
-                <li>prova senso di colpa quando si mette al primo posto</li>
-                <li>sente di aver perso entusiasmo e creatività</li>
-              </ul>
-            </div>
+            <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Mi concedo il piacere</h3>
+            <p class="italic text-ink/70 text-sm mt-1">"Se non mi permetto di provare piacere, rischio di sopravvivere alla vita invece che viverla."</p>
+          </div>
+          <span class="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center text-coral text-xl shrink-0 group-open:rotate-180 transition-transform duration-300">
+            ↓
+          </span>
+        </summary>
+        
+        <div class="px-6 pb-8 md:px-8 border-t border-ink/5 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Piacere, creatività e desiderio</li>
+              <li>Energia vitale</li>
+              <li>Colpa e vergogna</li>
+              <li>Relazione con il corpo</li>
+              <li>Relazione con il femminile e il maschile</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
+            <p class="mb-2">Bacino, zona lombare, organi riproduttivi, liquidi corporei.</p>
+            <p>Il modo in cui il corpo trattiene emozioni, desideri e vitalità.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>vive sempre nel dovere</li>
+              <li>fatica a divertirsi</li>
+              <li>si sente spento o scollegato dal piacere</li>
+              <li>prova senso di colpa quando si mette al primo posto</li>
+              <li>sente di aver perso entusiasmo e creatività</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </details>
 
       <!-- Modulo 5 -->
-      <div class="p-7 md:p-8 rounded-3xl bg-peachLight border border-ink/5 flex flex-col md:flex-row gap-6">
-        <span class="font-display text-3xl text-coral shrink-0">MODULO 5</span>
-        <div>
-          <p class="text-sm text-sage font-semibold mb-1">20/21 Marzo 2027</p>
-          <h3 class="font-display text-2xl text-ink mb-2">Mi affido alla vita</h3>
-          <p class="italic text-ink/70 mb-4">"Se provo a controllare tutto, il cuore dimentica come fidarsi."</p>
-
-          <div class="grid md:grid-cols-3 gap-6 text-sm text-ink/80 mt-4">
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>Fiducia e vulnerabilità</li>
-                <li>Relazioni e perdono</li>
-                <li>Apertura e chiusura del cuore</li>
-                <li>Dare e ricevere</li>
-                <li>Paura del dolore, protezione e difesa</li>
-              </ul>
+      <details class="group rounded-3xl bg-peachLight border border-ink/5 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none select-none">
+          <div class="pr-4">
+            <div class="flex items-center gap-3 mb-1">
+              <span class="font-display font-semibold text-coral text-sm tracking-wider uppercase">Modulo 5</span>
+              <span class="text-xs text-sage font-semibold bg-sage/15 px-3 py-0.5 rounded-full">20/21 Marzo 2027</span>
             </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
-              <p class="mb-2">Cuore, polmoni, torace, braccia, respiro.</p>
-              <p>Come il corpo costruisce corazze per proteggerci da ciò che abbiamo vissuto.</p>
-            </div>
-            <div>
-              <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
-              <ul class="list-disc list-inside space-y-1">
-                <li>si sente deluso dalle persone</li>
-                <li>fatica a fidarsi</li>
-                <li>vuole controllare tutto</li>
-                <li>tende a chiudersi quando soffre</li>
-                <li>sente il bisogno di fare tutto da solo</li>
-              </ul>
-            </div>
+            <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Mi affido alla vita</h3>
+            <p class="italic text-ink/70 text-sm mt-1">"Se provo a controllare tutto, il cuore dimentica come fidarsi."</p>
+          </div>
+          <span class="w-10 h-10 rounded-full bg-white/80 flex items-center justify-center text-coral text-xl shrink-0 group-open:rotate-180 transition-transform duration-300">
+            ↓
+          </span>
+        </summary>
+        
+        <div class="px-6 pb-8 md:px-8 border-t border-ink/5 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Temi che esploreremo:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>Fiducia e vulnerabilità</li>
+              <li>Relazioni e perdono</li>
+              <li>Apertura e chiusura del cuore</li>
+              <li>Dare e ricevere</li>
+              <li>Paura del dolore, protezione e difesa</li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Corpo e psicosomatica:</h4>
+            <p class="mb-2">Cuore, polmoni, torace, braccia, respiro.</p>
+            <p>Come il corpo costruisce corazze per proteggerci da ciò che abbiamo vissuto.</p>
+          </div>
+          <div>
+            <h4 class="font-semibold text-coral mb-2">Nella vita quotidiana per chi:</h4>
+            <ul class="list-disc list-inside space-y-1">
+              <li>si sente deluso dalle persone</li>
+              <li>fatica a fidarsi</li>
+              <li>vuole controllare tutto</li>
+              <li>tende a chiudersi quando soffre</li>
+              <li>sente il bisogno di fare tutto da solo</li>
+            </ul>
           </div>
         </div>
-      </div>
+      </details>
  
     </div>
   </div>
@@ -558,7 +657,7 @@
 <!-- =========================================================
      BONUS
      ========================================================= -->
-<section class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+<section id="bonus" class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
  
     <div class="max-w-2xl mb-14">
@@ -634,7 +733,7 @@
       
       <ul class="space-y-4 mb-8 text-ink/80 max-w-2xl mx-auto">
         <li class="flex gap-3"><span class="text-sage font-bold">✓</span> 5 weekend esperienziali dal vivo (1 al mese)</li>
-        <li class="flex gap-3"><span class="text-sage font-bold">✓</span> 5 call online di integrazione tra un incontro e l'altro</li>
+        <li class="flex gap-3"><span class="text-sage font-bold">✓</span> 4 call online di integrazione tra un incontro e l'altro</li>
         <li class="flex gap-3"><span class="text-sage font-bold">✓</span> 2 call finali di consolidamento (a 15 e 45 giorni)</li>
         <li class="flex gap-3"><span class="text-sage font-bold">✓</span> Supporto continuo in chat per tutta la durata del percorso</li>
         <li class="flex gap-3"><span class="text-sage font-bold">✓</span> 5 moduli di dispense cartacee e digitali con teoria, domande introspettive ed esercizi pratici</li>
@@ -684,7 +783,7 @@
 <!-- =========================================================
      FAQ
      ========================================================= -->
-<section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
+<section id="faq" class="relative bg-white py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-3xl mx-auto">
  
     <div class="mb-14">
