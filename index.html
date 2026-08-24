@@ -15,11 +15,11 @@
     theme: {
       extend: {
         colors: {
-          peach:      '#F3EAFF', // Crema violaceo
-          peachLight: '#FAF5FF', // Sfondo leggero
-          violet:     '#5E17EB', // Violetto
-          pinkAccent: '#FF66C4', // Rosa / Magenta
-          ink:        '#3A2A20', // Testo scuro
+          peach:      '#F3EAFF',
+          peachLight: '#FAF5FF',
+          violet:     '#5E17EB',
+          pinkAccent: '#FF66C4',
+          ink:        '#3A2A20',
         },
         fontFamily: {
           display: ['Playfair Display', 'serif'],
@@ -29,38 +29,32 @@
     },
   }
 </script>
-
-<link rel="stylesheet" href="style.css">
 </head>
 
 <body class="bg-peachLight font-body text-ink antialiased">
 
 <!-- =========================================================
-     NAVBAR FISSA (BACKGROUND BIANCO)
+     HEADER / NAVBAR FISSA
      ========================================================= -->
 <header class="sticky top-0 z-50 bg-white shadow-sm border-b border-violet/10">
   <div class="max-w-7xl mx-auto px-6 md:px-10 py-4 flex items-center justify-between gap-6">
-    
-    <!-- Logo -->
     <a href="#" class="shrink-0">
       <img src="logo-nuovo.jpeg.jpeg" alt="Aurora Accademia Olistica" class="h-14 md:h-16 w-auto object-contain">
     </a>
 
-    <!-- Menu Navigazione -->
     <nav class="hidden md:flex items-center gap-8">
       <a href="#risultati" class="text-sm font-medium text-ink/80 hover:text-pinkAccent transition-colors">Risultati</a>
       <a href="#per-chi-e" class="text-sm font-medium text-ink/80 hover:text-pinkAccent transition-colors">Per chi è</a>
+      <a href="#chi-sono" class="text-sm font-medium text-ink/80 hover:text-pinkAccent transition-colors">Chi sono</a>
       <a href="#programma" class="text-sm font-medium text-ink/80 hover:text-pinkAccent transition-colors">Programma</a>
       <a href="#bonus" class="text-sm font-medium text-ink/80 hover:text-pinkAccent transition-colors">Bonus</a>
       <a href="#pricing" class="text-sm font-medium text-ink/80 hover:text-pinkAccent transition-colors">Prezzi</a>
       <a href="#faq" class="text-sm font-medium text-ink/80 hover:text-pinkAccent transition-colors">FAQ</a>
     </nav>
 
-    <!-- CTA Menu -->
     <a href="#programma" class="hidden sm:inline-flex bg-violet/10 text-violet font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-violet hover:text-white transition-colors duration-300">
       Scopri il percorso
     </a>
-
   </div>
 </header>
 
@@ -68,8 +62,6 @@
      HERO SECTION
      ========================================================= -->
 <section class="relative overflow-hidden pt-12 pb-20 md:pt-16 md:pb-28">
-
-  <!-- Blob sfumati -->
   <div class="pointer-events-none absolute inset-0 -z-0">
     <div class="bg-blob absolute -top-32 left-1/3 w-[34rem] h-[34rem] rounded-full blur-[100px]"
          style="background: radial-gradient(circle, rgba(255,102,196,0.25), transparent 70%);"></div>
@@ -79,25 +71,19 @@
 
   <div class="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
     <div class="grid md:grid-cols-2 gap-14 md:gap-10 items-center">
-
-      <!-- Colonna Testi -->
       <div>
-        <!-- Slogan in violetto #5E17EB -->
         <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-5">
           Ritrova coraggio, sicurezza e fiducia in te
         </p>
 
-        <!-- H1 in rosa #FF66C4 -->
         <h1 class="font-display text-4xl md:text-6xl leading-[1.08] mb-6 text-pinkAccent font-semibold">
           Il tuo Corpo come Bussola
         </h1>
 
-        <!-- Offerta / Promessa -->
         <p class="text-lg md:text-xl text-ink/80 leading-relaxed mb-10 max-w-lg">
           Un percorso di 5 incontri che ti guida a vivere con maggiore libertà, comprendendo i segnali del tuo corpo e ascoltando le tue emozioni, senza tradirti di continuo ed avere paura di ferire chi ti sta vicino.
         </p>
 
-        <!-- CTA Principalmente Violetto -->
         <a href="#programma"
            class="group inline-flex items-center gap-3 bg-violet text-white font-body font-semibold
                   px-8 py-4 rounded-full hover:bg-pinkAccent transition-colors duration-300 shadow-lg shadow-violet/20">
@@ -106,27 +92,21 @@
         </a>
       </div>
 
-      <!-- Mockup / Image Container -->
       <div class="relative">
-        <div class="aspect-[4/5] rounded-3xl border border-violet/10 bg-white/80
-                    flex items-center justify-center overflow-hidden shadow-sm">
-          <span class="text-ink/40 text-sm text-center px-8">
-            [Mockup o foto]
-          </span>
+        <div class="aspect-[4/5] rounded-3xl border border-violet/10 bg-white/80 flex items-center justify-center overflow-hidden shadow-sm">
+          <span class="text-ink/40 text-sm text-center px-8">[Mockup o foto]</span>
         </div>
         <div class="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-pinkAccent/40 rounded-2xl -z-10"></div>
       </div>
-
     </div>
   </div>
 </section>
 
 <!-- =========================================================
-     RISULTATI (PRIMA / DOPO)
+     RISULTATI
      ========================================================= -->
 <section id="risultati" class="relative bg-white py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-5xl mx-auto">
-
     <div class="max-w-2xl mb-16">
       <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Risultati</p>
       <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">
@@ -135,83 +115,53 @@
     </div>
 
     <div class="space-y-6">
-
+      <!-- Item 1 -->
       <div class="p-6 md:p-8 rounded-3xl bg-peach border border-violet/10 grid md:grid-cols-2 gap-6 items-center">
         <div class="border-b md:border-b-0 md:border-r border-violet/10 pb-4 md:pb-0 md:pr-6">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">
-            Punto di partenza
-          </span>
-          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
-            Paura del futuro ed insicurezza economica
-          </h3>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">Punto di partenza</span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">Paura del futuro ed insicurezza economica</h3>
         </div>
         <div class="md:pl-2">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">
-            Cosa otterrai
-          </span>
-          <p class="text-ink/80 leading-relaxed font-medium">
-            Costruisci una base interna più stabile e sviluppa maggiore fiducia nella vita e nelle tue risorse.
-          </p>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">Cosa otterrai</span>
+          <p class="text-ink/80 leading-relaxed font-medium">Costruisci una base interna più stabile e sviluppa maggiore fiducia nella vita e nelle tue risorse.</p>
         </div>
       </div>
 
+      <!-- Item 2 -->
       <div class="p-6 md:p-8 rounded-3xl bg-peach border border-violet/10 grid md:grid-cols-2 gap-6 items-center">
         <div class="border-b md:border-b-0 md:border-r border-violet/10 pb-4 md:pb-0 md:pr-6">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">
-            Punto di partenza
-          </span>
-          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
-            Difficoltà a provare piacere e senso di colpa
-          </h3>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">Punto di partenza</span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">Difficoltà a provare piacere e senso di colpa</h3>
         </div>
         <div class="md:pl-2">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">
-            Cosa otterrai
-          </span>
-          <p class="text-ink/80 leading-relaxed font-medium">
-            Ascolta i tuoi desideri e concediti lo spazio che ti serve, senza sentirti in colpa.
-          </p>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">Cosa otterrai</span>
+          <p class="text-ink/80 leading-relaxed font-medium">Ascolta i tuoi desideri e concediti lo spazio che ti serve, senza sentirti in colpa.</p>
         </div>
       </div>
 
+      <!-- Item 3 -->
       <div class="p-6 md:p-8 rounded-3xl bg-peach border border-violet/10 grid md:grid-cols-2 gap-6 items-center">
         <div class="border-b md:border-b-0 md:border-r border-violet/10 pb-4 md:pb-0 md:pr-6">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">
-            Punto di partenza
-          </span>
-          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
-            Bassa autostima e paura del giudizio
-          </h3>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">Punto di partenza</span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">Bassa autostima e paura del giudizio</h3>
         </div>
         <div class="md:pl-2">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">
-            Cosa otterrai
-          </span>
-          <p class="text-ink/80 leading-relaxed font-medium">
-            Sviluppa centratura, forza interiore e identità personale.
-          </p>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">Cosa otterrai</span>
+          <p class="text-ink/80 leading-relaxed font-medium">Sviluppa centratura, forza interiore e identità personale.</p>
         </div>
       </div>
 
+      <!-- Item 4 -->
       <div class="p-6 md:p-8 rounded-3xl bg-peach border border-violet/10 grid md:grid-cols-2 gap-6 items-center">
         <div class="border-b md:border-b-0 md:border-r border-violet/10 pb-4 md:pb-0 md:pr-6">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">
-            Punto di partenza
-          </span>
-          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">
-            Paura di esporti e difficoltà a dire no
-          </h3>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-pinkAccent bg-pinkAccent/15 rounded-full mb-3">Punto di partenza</span>
+          <h3 class="font-display text-lg md:text-xl font-semibold text-ink">Paura di esporti e difficoltà a dire no</h3>
         </div>
         <div class="md:pl-2">
-          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">
-            Cosa otterrai
-          </span>
-          <p class="text-ink/80 leading-relaxed font-medium">
-            Riconosci e comunica ciò che provi, con maggiore chiarezza, senza aver paura di ferire chi ti sta vicino.
-          </p>
+          <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-violet bg-violet/15 rounded-full mb-3">Cosa otterrai</span>
+          <p class="text-ink/80 leading-relaxed font-medium">Riconosci e comunica ciò che provi, con maggiore chiarezza, senza aver paura di ferire chi ti sta vicino.</p>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -221,7 +171,6 @@
      ========================================================= -->
 <section id="per-chi-e" class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
-
     <div class="max-w-2xl mb-16">
       <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Per chi è</p>
       <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">
@@ -230,57 +179,47 @@
     </div>
 
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-
       <div class="p-8 rounded-3xl bg-white border border-violet/10">
         <h3 class="font-display text-lg font-semibold text-pinkAccent mb-3">Donna, 35-50 anni</h3>
         <p class="text-ink/80 leading-relaxed">Libera professionista, con poca fiducia in sé e difficoltà a portare avanti i progetti perché ha la convinzione di non sapere mai abbastanza.</p>
       </div>
-
       <div class="p-8 rounded-3xl bg-white border border-violet/10">
         <h3 class="font-display text-lg font-semibold text-pinkAccent mb-3">Uomo, 40-50 anni</h3>
         <p class="text-ink/80 leading-relaxed">Lavoratore dipendente, non più soddisfatto della sua vita, ma senza una nuova direzione.</p>
       </div>
-
       <div class="p-8 rounded-3xl bg-white border border-violet/10">
         <h3 class="font-display text-lg font-semibold text-pinkAccent mb-3">Ragazzo, 26-36 anni</h3>
         <p class="text-ink/80 leading-relaxed">Vittima di dipendenze e relazioni tossiche, non si crede abbastanza forte, attira sempre lo stesso tipo di persone e non riesce a canalizzare la sua energia maschile.</p>
       </div>
-
       <div class="p-8 rounded-3xl bg-white border border-violet/10">
         <h3 class="font-display text-lg font-semibold text-pinkAccent mb-3">Donna, 35–50 anni</h3>
         <p class="text-ink/80 leading-relaxed">Molto sensibile, abituata a occuparsi di tutti, assorbe emozioni e si sente sempre sopraffatta.</p>
       </div>
-
       <div class="p-8 rounded-3xl bg-white border border-violet/10">
         <h3 class="font-display text-lg font-semibold text-pinkAccent mb-3">Uomo, 40-50 anni</h3>
         <p class="text-ink/80 leading-relaxed">Con ansia generalizzata che lo porta ad avere problemi nei rapporti sessuali con la partner.</p>
       </div>
-
       <div class="p-8 rounded-3xl bg-white border border-violet/10">
         <h3 class="font-display text-lg font-semibold text-pinkAccent mb-3">Ragazza, 25–35 anni</h3>
         <p class="text-ink/80 leading-relaxed">Con scarso senso del proprio valore, confronto continuo, autocritica e difficoltà a vedere le proprie qualità.</p>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <!-- =========================================================
-     TESTIMONIANZE
+     FEEDBACK / TESTIMONIANZE
      ========================================================= -->
 <section class="relative bg-white py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
- 
     <div class="max-w-2xl mb-12">
-      <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Cosa dicono di me</p>
+      <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Feedback</p>
       <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">
-        Esperienze e testimonianze
+        Cosa dicono di me
       </h2>
     </div>
- 
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
- 
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
       <div class="p-8 rounded-3xl bg-peach border border-violet/10 flex flex-col justify-between">
         <div>
           <div class="flex gap-1 mb-4 text-pinkAccent">★★★★★</div>
@@ -290,17 +229,17 @@
         </div>
         <p class="text-sm font-semibold text-ink/70">Monica Reviglio <span class="font-normal text-ink/50">— Affiancamento 1:1</span></p>
       </div>
- 
+
       <div class="p-8 rounded-3xl bg-peach border border-violet/10 flex flex-col justify-between">
         <div>
           <div class="flex gap-1 mb-4 text-pinkAccent">★★★★★</div>
           <p class="text-ink/80 leading-relaxed mb-6">
-            Ho scelto di iniziare un percorso individuale con Aurora in un momento di confusione e trasformazione della mia vita. Mi ero reso conto che diversi aspetti, sia personali che lavorativi, non mi soddisfacevano più, ma non riuscivo a capire da dove partire per cambiare qualcosa. Nel corso di cinque incontri, ho acquisito maggiore chiarezza, sicurezza e consapevolezza. Ho ritrovato fiducia nel futuro e ho imparato a considerare la mia sensibilità non come una debolezza, ma come una risorsa importante che mi appartiene.
+            Ho scelto di iniziare un percorso individuale con Aurora in un momento di confusione e trasformazione della mia vita. Mi ero reso conto che diversi aspetti, sia personali che lavorativi, non mi soddisfavano più, ma non riuscivo a capire da dove partire per cambiare qualcosa. Nel corso di cinque incontri, ho acquisito maggiore chiarezza, sicurezza e consapevolezza. Ho ritrovato fiducia nel futuro e ho imparato a considerare la mia sensibilità non come una debolezza, ma come una risorsa importante che mi appartiene.
           </p>
         </div>
         <p class="text-sm font-semibold text-ink/70">Andrea Oddenino <span class="font-normal text-ink/50">— Affiancamento 1:1</span></p>
       </div>
- 
+
       <div class="p-8 rounded-3xl bg-peach border border-violet/10 flex flex-col justify-between">
         <div>
           <div class="flex gap-1 mb-4 text-pinkAccent">★★★★★</div>
@@ -310,48 +249,36 @@
         </div>
         <p class="text-sm font-semibold text-ink/70">Cliente Affiancamento 1:1</p>
       </div>
- 
     </div>
- 
   </div>
 </section>
 
 <!-- =========================================================
-     ABOUT THE SPEAKER
+     CHI SONO
      ========================================================= -->
-<section class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
+<section id="chi-sono" class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
- 
     <div class="max-w-2xl mb-16">
       <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Chi ti accompagna</p>
       <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">
         Ciao, sono Aurora.
       </h2>
     </div>
- 
+
     <div class="grid md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] gap-12 md:gap-16 items-start">
- 
       <div class="aspect-[4/5] rounded-3xl bg-white border border-violet/10 flex items-center justify-center overflow-hidden">
-        <span class="text-ink/40 text-sm text-center px-8">
-          [Foto di Aurora]
-        </span>
+        <span class="text-ink/40 text-sm text-center px-8">[Foto di Aurora]</span>
       </div>
- 
+
       <div>
         <p class="text-xl font-display text-pinkAccent font-semibold mb-4">Guida Olistica per <em>Anime Ribelli</em>.</p>
         <div class="text-lg text-ink/80 leading-relaxed space-y-4 mb-10">
-          <p>
-            Mi prendo cura delle persone da 11 anni, inizialmente attraverso il benessere ed il massaggio e successivamente attraverso la connessione con il corpo, il sistema nervoso e le emozioni.
-          </p>
-          <p>
-            Oggi accompagno le persone a conoscere e comprendere il proprio corpo, imparando a riconoscerne i segnali, sciogliere ciò che le blocca e riscoprire risorse e potenzialità che spesso non sanno di avere.
-          </p>
-          <p>
-            Nel mio percorso unisco <strong>teoria e pratica</strong>, perché credo che conoscere come funzioniamo sia fondamentale, ma che il vero cambiamento avvenga quando ciò che comprendiamo può essere sperimentato e integrato nel corpo.
-          </p>
+          <p>Mi prendo cura delle persone da 11 anni, inizialmente attraverso il benessere ed il massaggio e successivamente attraverso la connessione con il corpo, il sistema nervoso e le emozioni.</p>
+          <p>Oggi accompagno le persone a conoscere e comprendere il proprio corpo, imparando a riconoscerne i segnali, sciogliere ciò che le blocca e riscoprire risorse e potenzialità che spesso non sanno di avere.</p>
+          <p>Nel mio percorso unisco <strong>teoria e pratica</strong>, perché credo che conoscere come funzioniamo sia fondamentale, ma che il vero cambiamento avvenga quando ciò che comprendiamo può essere sperimentato e integrato nel corpo.</p>
+          <p class="italic text-ink">L'obiettivo è imparare a fidarsi sempre di più di sé, del proprio sentire e delle proprie risorse, per vivere ed esprimersi con maggiore sicurezza, libertà e consapevolezza.</p>
         </div>
- 
-        <!-- Riga statistiche (3 colonne) -->
+
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-8 pt-6 border-t border-violet/10">
           <div>
             <p class="font-display text-3xl md:text-4xl text-pinkAccent font-semibold">11</p>
@@ -367,38 +294,40 @@
           </div>
         </div>
       </div>
- 
     </div>
   </div>
 </section>
 
 <!-- =========================================================
-     PROGRAMMA DEL CORSO (ACCORDION)
+     PROGRAMMA DEL CORSO
      ========================================================= -->
 <section id="programma" class="relative bg-white py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-4xl mx-auto">
- 
-    <div class="max-w-2xl mb-12">
+    
+    <!-- Intestazione Sezione -->
+    <div class="max-w-2xl mb-8">
       <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Il percorso</p>
-      <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent mb-6">
         Programma del corso
       </h2>
+
+      <!-- Le 3 Card -->
+      <div class="flex flex-wrap gap-3 sm:gap-4 pt-2">
+        <div class="bg-peach border border-violet/15 text-pinkAccent font-medium text-sm md:text-base px-5 py-2.5 rounded-full shadow-sm">
+          <strong class="font-bold">5</strong> moduli
+        </div>
+        <div class="bg-peach border border-violet/15 text-pinkAccent font-medium text-sm md:text-base px-5 py-2.5 rounded-full shadow-sm">
+          <strong class="font-bold">5</strong> weekend dal vivo
+        </div>
+        <div class="bg-peach border border-violet/15 text-pinkAccent font-medium text-sm md:text-base px-5 py-2.5 rounded-full shadow-sm">
+          <strong class="font-bold">6</strong> call online di integrazione
+        </div>
+      </div>
     </div>
- 
-    <div class="flex flex-wrap gap-4 mb-12">
-      <div class="px-6 py-3 rounded-full bg-peach border border-violet/10 text-sm text-ink/70">
-        <span class="font-semibold text-pinkAccent">5</span> moduli
-      </div>
-      <div class="px-6 py-3 rounded-full bg-peach border border-violet/10 text-sm text-ink/70">
-        <span class="font-semibold text-pinkAccent">5</span> weekend dal vivo
-      </div>
-      <div class="px-6 py-3 rounded-full bg-peach border border-violet/10 text-sm text-ink/70">
-        <span class="font-semibold text-pinkAccent">5</span> call online di integrazione
-      </div>
-    </div>
- 
-    <div class="space-y-4">
- 
+
+    <!-- Lista dei Moduli (Accordion) -->
+    <div class="space-y-4 mt-12">
+      
       <!-- Modulo 1 -->
       <details class="group rounded-3xl bg-peach border border-violet/10 overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none select-none">
@@ -410,9 +339,7 @@
             <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Io sono il mio centro</h3>
             <p class="italic text-ink/70 text-sm mt-1">"Se non ho un centro stabile, non posso radicarmi davvero né aprirmi con sicurezza."</p>
           </div>
-          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">
-            ↓
-          </span>
+          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">↓</span>
         </summary>
         
         <div class="px-6 pb-8 md:px-8 border-t border-violet/10 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
@@ -425,11 +352,14 @@
               <li>Bisogno di approvazione</li>
               <li>Rabbia, vergogna e senso di impotenza</li>
               <li>Paura del giudizio</li>
+              <li>Capacità di scegliere e prendere decisioni</li>
+              <li>Responsabilità personale</li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Corpo e psicosomatica:</h4>
-            <p class="mb-2">Legame tra emozioni, sistema digestivo e diaframma (stomaco, fegato, pancreas, intestino tenue).</p>
+            <p class="mb-2">Legame tra emozioni, sistema digestivo e diaframma (stomaco, fegato, pancreas, intestino tenue, tensioni diaframmatiche).</p>
+            <p>Come il corpo reagisce quando ci sentiamo costantemente sotto pressione, svalutati o incapaci di occupare il nostro posto nel mondo.</p>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Nella vita quotidiana per chi:</h4>
@@ -437,11 +367,13 @@
               <li>si sente spesso bloccato</li>
               <li>ha molte idee, ma fatica ad agire</li>
               <li>cerca continuamente conferme dagli altri</li>
+              <li>si sente piccolo rispetto alle proprie potenzialità</li>
+              <li>fa fatica a dire "questa sono io"</li>
             </ul>
           </div>
         </div>
       </details>
- 
+
       <!-- Modulo 2 -->
       <details class="group rounded-3xl bg-peach border border-violet/10 overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-6 md:p-8 cursor-pointer list-none select-none">
@@ -451,11 +383,9 @@
               <span class="text-xs text-violet font-semibold bg-violet/10 px-3 py-0.5 rounded-full">21/22 Novembre 2026</span>
             </div>
             <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Do voce a chi sono</h3>
-            <p class="italic text-ink/70 text-sm mt-1">"Se non mi permetto di esprimermi, la mia verità resta bloccata nel corpo."</p>
+            <p class="italic text-ink/70 text-sm mt-1">"Se non mi permetto di esprimersi, la mia verità resta bloccata nel corpo."</p>
           </div>
-          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">
-            ↓
-          </span>
+          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">↓</span>
         </summary>
         
         <div class="px-6 pb-8 md:px-8 border-t border-violet/10 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
@@ -466,11 +396,15 @@
               <li>Espressione personale</li>
               <li>Verità e maschere sociali</li>
               <li>Paura del conflitto</li>
+              <li>Difficoltà a chiedere ciò di cui si ha bisogno</li>
+              <li>Dire no senza sentirsi in colpa</li>
+              <li>Ascolto di sé e degli altri</li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Corpo e psicosomatica:</h4>
-            <p class="mb-2">Rapporto tra emozioni non espresse e tensioni corporee (gola, collo, mandibola, spalle).</p>
+            <p class="mb-2">Rapporto tra emozioni non espresse e tensioni corporee (gola, collo, mandibola, spalle, respirazione).</p>
+            <p>Come il corpo trattiene parole, emozioni e bisogni rimasti inespressi.</p>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Nella vita quotidiana per chi:</h4>
@@ -478,6 +412,8 @@
               <li>dice sempre "va bene"</li>
               <li>evita discussioni e confronti</li>
               <li>ha paura di deludere gli altri</li>
+              <li>si sente incompreso</li>
+              <li>vorrebbe esprimersi, ma si blocca</li>
             </ul>
           </div>
         </div>
@@ -494,9 +430,7 @@
             <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Ho diritto di esserci</h3>
             <p class="italic text-ink/70 text-sm mt-1">"Se non ho una base stabile, non posso accogliere né sostenere ciò che arriva."</p>
           </div>
-          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">
-            ↓
-          </span>
+          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">↓</span>
         </summary>
         
         <div class="px-6 pb-8 md:px-8 border-t border-violet/10 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
@@ -505,18 +439,26 @@
             <ul class="list-disc list-inside space-y-1">
               <li>Sicurezza interiore</li>
               <li>Radicamento</li>
+              <li>Sopravvivenza e fiducia</li>
               <li>Rapporto con il denaro</li>
+              <li>Rapporto con i genitori</li>
+              <li>Appartenenza</li>
+              <li>Stabilità emotiva</li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Corpo e psicosomatica:</h4>
             <p class="mb-2">Piedi, gambe, ginocchia, anche, pavimento pelvico.</p>
+            <p>Come il corpo reagisce quando vive costantemente in allerta.</p>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Nella vita quotidiana per chi:</h4>
             <ul class="list-disc list-inside space-y-1">
               <li>vive nell'ansia per il futuro</li>
               <li>sente di non avere un posto nel mondo</li>
+              <li>fatica a sentirsi al sicuro</li>
+              <li>vive continui stati di preoccupazione</li>
+              <li>si sente sempre "in sopravvivenza"</li>
             </ul>
           </div>
         </div>
@@ -533,9 +475,7 @@
             <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Mi concedo il piacere</h3>
             <p class="italic text-ink/70 text-sm mt-1">"Se non mi permetto di provare piacere, rischio di sopravvivere alla vita invece che viverla."</p>
           </div>
-          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">
-            ↓
-          </span>
+          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">↓</span>
         </summary>
         
         <div class="px-6 pb-8 md:px-8 border-t border-violet/10 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
@@ -544,17 +484,24 @@
             <ul class="list-disc list-inside space-y-1">
               <li>Piacere, creatività e desiderio</li>
               <li>Energia vitale</li>
+              <li>Colpa e vergogna</li>
+              <li>Relazione con il corpo</li>
+              <li>Relazione con il femminile e il maschile</li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Corpo e psicosomatica:</h4>
-            <p class="mb-2">Bacino, zona lombare, organi riproduttivi.</p>
+            <p class="mb-2">Bacino, zona lombare, organi riproduttivi, liquidi corporei.</p>
+            <p>Il modo in cui il corpo trattiene emozioni, desideri e vitalità.</p>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Nella vita quotidiana per chi:</h4>
             <ul class="list-disc list-inside space-y-1">
               <li>vive sempre nel dovere</li>
               <li>fatica a divertirsi</li>
+              <li>si sente spento o scollegato dal piacere</li>
+              <li>prova senso di colpa quando si mette al primo posto</li>
+              <li>sente di aver perso entusiasmo e creatività</li>
             </ul>
           </div>
         </div>
@@ -571,9 +518,7 @@
             <h3 class="font-display text-xl md:text-2xl text-ink font-semibold">Mi affido alla vita</h3>
             <p class="italic text-ink/70 text-sm mt-1">"Se provo a controllare tutto, il cuore dimentica come fidarsi."</p>
           </div>
-          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">
-            ↓
-          </span>
+          <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center text-pinkAccent text-xl shrink-0 group-open:rotate-180 transition-transform duration-300 shadow-sm">↓</span>
         </summary>
         
         <div class="px-6 pb-8 md:px-8 border-t border-violet/10 pt-6 grid md:grid-cols-3 gap-6 text-sm text-ink/80">
@@ -582,56 +527,111 @@
             <ul class="list-disc list-inside space-y-1">
               <li>Fiducia e vulnerabilità</li>
               <li>Relazioni e perdono</li>
+              <li>Apertura e chiusura del cuore</li>
+              <li>Dare e ricevere</li>
+              <li>Paura del dolore, protezione e difesa</li>
             </ul>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Corpo e psicosomatica:</h4>
             <p class="mb-2">Cuore, polmoni, torace, braccia, respiro.</p>
+            <p>Come il corpo costruisce corazze per proteggerci da ciò che abbiamo vissuto.</p>
           </div>
           <div>
             <h4 class="font-semibold text-pinkAccent mb-2">Nella vita quotidiana per chi:</h4>
             <ul class="list-disc list-inside space-y-1">
               <li>si sente deluso dalle persone</li>
               <li>fatica a fidarsi</li>
+              <li>vuole controllare tutto</li>
+              <li>tende a chiudersi quando soffre</li>
+              <li>sente il bisogno di fare tutto da solo</li>
             </ul>
           </div>
         </div>
       </details>
- 
     </div>
+
   </div>
 </section>
 
 <!-- =========================================================
-     BONUS
+     BONUS COMPLETI
      ========================================================= -->
 <section id="bonus" class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-6xl mx-auto">
- 
     <div class="max-w-2xl mb-14">
-      <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">In più</p>
+      <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Inclusi nel corso</p>
       <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">
-        Bonus inclusi nel percorso
+        Bonus esclusivi
       </h2>
     </div>
- 
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-8">
-      <div class="p-8 rounded-3xl bg-white border border-violet/10">
-        <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">Call conoscitiva iniziale</h3>
-        <p class="text-ink/70 leading-relaxed">Per capire se è il percorso adatto a te.</p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+      <!-- Bonus 1 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">1. Call conoscitiva iniziale</h3>
+          <p class="text-ink/70 leading-relaxed text-sm">Per capire se è il percorso adatto a te.</p>
+        </div>
       </div>
 
-      <div class="p-8 rounded-3xl bg-white border border-violet/10">
-        <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">5 weekend esperienziali dal vivo</h3>
-        <p class="text-ink/70 leading-relaxed">Un incontro al mese per permettere al corpo di integrare gradualmente ciò che emerge.</p>
+      <!-- Bonus 2 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">2. 5 weekend esperienziali</h3>
+          <p class="text-ink/70 leading-relaxed text-sm">Incontri di gruppo dal vivo, uno al mese, per permettere al corpo di integrare gradualmente ciò che emerge, <strong>senza sovraccaricarsi</strong>.</p>
+        </div>
       </div>
 
-      <div class="p-8 rounded-3xl bg-white border border-violet/10">
-        <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">Supporto continuo</h3>
-        <p class="text-ink/70 leading-relaxed">Accesso a un gruppo dedicato per condividere domande e progressi durante tutto il percorso.</p>
+      <!-- Bonus 3 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">3. Supporto continuo</h3>
+          <p class="text-ink/70 leading-relaxed text-sm">Accesso a un <strong>gruppo dedicato</strong> per condividere domande, difficoltà, intuizioni e progressi tra un incontro e l'altro.</p>
+        </div>
+      </div>
+
+      <!-- Bonus 4 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">4. 5 incontri online di integrazione</h3>
+          <p class="text-ink/70 leading-relaxed text-sm">Ogni 15 giorni dopo il weekend in presenza, ci ritroveremo online per confrontarci, fare domande e capire come integrare l’esperienza nella vita quotidiana.</p>
+        </div>
+      </div>
+
+      <!-- Bonus 5 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between lg:col-span-2">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">5. Materiali pratici e manuale</h3>
+          <p class="text-ink/70 leading-relaxed text-sm mb-3">Dispense cartacee e digitali pensate come un vero manuale: teoria spiegata in modo semplice, domande di introspezione ed esercizi pratici.</p>
+          <p class="text-ink/70 leading-relaxed text-sm">Inclusi anche meditazioni guidate, esercizi di journaling, pratiche corporee e suggerimenti di lettura.</p>
+        </div>
+      </div>
+
+      <!-- Bonus 6 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">6. Video Freebie</h3>
+          <p class="text-ink/70 leading-relaxed text-sm">Un video gratuito con una piccola pratica per comprendere cosa significa lavorare attraverso il corpo e avere un assaggio delle tecniche applicate.</p>
+        </div>
+      </div>
+
+      <!-- Bonus 7 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">7. Gruppo ristretto di partecipanti</h3>
+          <p class="text-ink/70 leading-relaxed text-sm">Posti limitati per garantire il massimo ascolto, confronto e attenzione personalizzata durante tutto il percorso.</p>
+        </div>
+      </div>
+
+      <!-- Bonus 8 -->
+      <div class="p-8 rounded-3xl bg-white border border-violet/10 flex flex-col justify-between">
+        <div>
+          <h3 class="font-display text-xl text-pinkAccent font-semibold mb-3">8. Supporto post-conclusione</h3>
+          <p class="text-ink/70 leading-relaxed text-sm">Due call online di gruppo (a 15 e a 45 giorni dalla fine) per consolidare quanto appreso e accompagnarti nell'integrazione finale.</p>
+        </div>
       </div>
     </div>
- 
   </div>
 </section>
 
@@ -640,21 +640,30 @@
      ========================================================= -->
 <section id="pricing" class="relative bg-white py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-4xl mx-auto">
- 
     <div class="max-w-2xl mb-6 text-center mx-auto">
       <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Scegli il tuo pacchetto</p>
       <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent mb-4">
         Investi sul tuo benessere
       </h2>
     </div>
- 
+
     <div class="p-8 md:p-10 rounded-3xl bg-peach border-2 border-pinkAccent shadow-xl shadow-pinkAccent/10 mt-10">
       <h3 class="font-display text-3xl text-ink mb-6 text-center">Percorso Completo</h3>
       
+      <ul class="space-y-3 mb-8 text-ink/80 text-sm max-w-lg mx-auto">
+        <li class="flex items-center gap-3"><span class="text-pinkAccent font-bold">✓</span> 5 weekend esperienziali dal vivo (1 al mese)</li>
+        <li class="flex items-center gap-3"><span class="text-pinkAccent font-bold">✓</span> 4 call online di integrazione tra un incontro e l'altro</li>
+        <li class="flex items-center gap-3"><span class="text-pinkAccent font-bold">✓</span> 2 call finali di consolidamento</li>
+        <li class="flex items-center gap-3"><span class="text-pinkAccent font-bold">✓</span> Supporto continuo in chat per tutta la durata del percorso</li>
+        <li class="flex items-center gap-3"><span class="text-pinkAccent font-bold">✓</span> 5 moduli di dispense cartacee e digitali con teoria ed esercizi</li>
+        <li class="flex items-center gap-3"><span class="text-pinkAccent font-bold">✓</span> Meditazioni guidate, video ed esercizi disponibili modulo dopo modulo</li>
+        <li class="flex items-center gap-3"><span class="text-pinkAccent font-bold">✓</span> Gruppo ristretto di partecipanti per favorire ascolto e confronto</li>
+      </ul>
+
       <div class="border-t border-violet/10 pt-6 text-center">
-        <div class="flex justify-center items-baseline gap-4 mb-2">
-          <span class="text-sm text-ink/50 line-through">Prezzo pieno € 1.750,00</span>
-          <span class="font-display text-4xl text-pinkAccent font-bold">Early Bird € 1.575,00</span>
+        <div class="flex justify-center items-baseline gap-4 mb-2 flex-wrap">
+          <span class="text-base text-ink/50 line-through">Prezzo pieno € 1.750,00</span>
+          <span class="font-display text-3xl md:text-4xl text-pinkAccent font-bold">Early Bird € 1.575,00</span>
         </div>
         <p class="text-sm font-semibold text-violet mb-8">Sconto del 15% per studenti</p>
 
@@ -663,88 +672,102 @@
         </a>
       </div>
     </div>
-
   </div>
 </section>
 
 <!-- =========================================================
-     FAQ
+     FAQ COMPLETE
      ========================================================= -->
 <section id="faq" class="relative bg-peachLight py-24 md:py-32 px-6 md:px-10">
   <div class="max-w-3xl mx-auto">
     <div class="mb-14">
       <p class="uppercase tracking-[0.2em] text-sm text-violet font-semibold mb-4">Domande frequenti</p>
-      <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">
-        FAQ
-      </h2>
+      <h2 class="font-display text-3xl md:text-5xl leading-tight text-pinkAccent">FAQ</h2>
     </div>
- 
+
     <div class="space-y-4">
-
-      <!-- Domanda 1 -->
       <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
-          <span>Come faccio a sapere se questo percorso è adatto a me?</span>
-          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">
-            ↓
-          </span>
+          <span>Come faccio a sapere se è adatto a me?</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
         </summary>
         <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
-          <p>
-            Prima dell'iscrizione è prevista una call conoscitiva individuale gratuita. Durante la chiamata valuteremo insieme i tuoi obiettivi, i tuoi blocchi attuali e capiremo se il formato e i temi del percorso sono esattamente ciò di cui hai bisogno in questo momento.
-          </p>
+          Verrà programmata una call conoscitiva iniziale per comprendere se è ciò che stavi cercando.
         </div>
       </details>
 
-      <!-- Domanda 2 -->
       <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
-          <span>Cosa succede se devo saltare uno dei weekend dal vivo?</span>
-          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">
-            ↓
-          </span>
+          <span>Se non posso pagare tutto subito?</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
         </summary>
         <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
-          <p>
-            Il percorso è pensato per essere vissuto in presenza per beneficiare del lavoro corporeo ed esperienziale. Tuttavia, in caso di assenza imprevista, avrai a disposizione il materiale teorico, il supporto del gruppo e la call online di integrazione per recuperare i concetti chiave.
-          </p>
+          C’è la possibilità di dilazionare l’importo in acconto + 3 rate (acconto, entro il 1°, 3° e 5° incontro).
         </div>
       </details>
 
-      <!-- Domanda 3 -->
       <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
-          <span>È possibile pagare a rate?</span>
-          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">
-            ↓
-          </span>
+          <span>Cosa significa lavorare con il corpo?</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
         </summary>
         <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
-          <p>
-            Sì, sono previsti piani di rateizzazione personalizzati per permetterti di accedere al percorso con la massima serenità. Durante la call conoscitiva potremo definire la modalità più comoda per te.
-          </p>
+          Dopo la call conoscitiva avrai la possibilità di accedere ad un video gratuito con una piccola pratica per farti comprendere cosa significa lavorare attraverso il corpo ed avere un assaggio di alcune tecniche che verranno applicate.
         </div>
       </details>
 
-      <!-- Domanda 4 -->
       <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
         <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
-          <span>Servono competenze particolari o esperienze precedenti in ambito olistico?</span>
-          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">
-            ↓
-          </span>
+          <span>Non ho nessuna esperienza nel settore, è un problema?</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
         </summary>
         <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
-          <p>
-            Assolutamente no. Il percorso è aperto a chiunque desideri sviluppare maggiore consapevolezza corporea ed emotiva, indipendentemente dall'esperienza passata.
-          </p>
+          Assolutamente no. Abbiamo tutti un corpo e non serve esperienza per imparare a comprenderlo.
         </div>
       </details>
 
+      <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
+          <span>Ho paura di perdere i progressi fatti</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
+        </summary>
+        <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
+          Proprio per questo motivo verranno lasciati degli esercizi tra un incontro e l’altro, ci sarà un gruppo dedicato per ricevere assistenza e verrà programmata una videocall di gruppo dopo 15 giorni da ogni incontro.
+        </div>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
+          <span>Mi sentirò abbandonato al termine del percorso?</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
+        </summary>
+        <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
+          No, verranno programmate due call al termine del percorso: dopo 15 giorni e 45 giorni.
+        </div>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
+          <span>Se durante il percorso emerge qualche blocco/trauma che voglio approfondire privatamente?</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
+        </summary>
+        <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
+          I trattamenti e le sedute individuali di Aurora e Andrea saranno disponibili a prezzi scontati per i partecipanti al percorso.
+        </div>
+      </details>
+
+      <details class="group rounded-2xl bg-white border border-violet/10 overflow-hidden transition-all duration-300">
+        <summary class="flex items-center justify-between p-6 cursor-pointer list-none select-none font-semibold text-ink">
+          <span>Ci sono sconti/promozioni/fasce di prezzo?</span>
+          <span class="w-8 h-8 rounded-full bg-peachLight flex items-center justify-center text-pinkAccent text-lg shrink-0 group-open:rotate-180 transition-transform duration-300">↓</span>
+        </summary>
+        <div class="px-6 pb-6 pt-2 text-ink/80 text-sm leading-relaxed border-t border-violet/5">
+          Sì, il prezzo è ridotto per gli studenti.
+        </div>
+      </details>
     </div>
   </div>
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
