@@ -9,6 +9,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 
+
+<script src="script.js" defer></script>
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
   tailwind.config = {
@@ -55,6 +57,33 @@
     <a href="#programma" class="hidden sm:inline-flex bg-violet/10 text-violet font-semibold px-5 py-2.5 rounded-full text-sm hover:bg-violet hover:text-white transition-colors duration-300">
       Scopri il percorso
     </a>
+
+    <!-- Pulsante Hamburger Mobile -->
+      <button id="mobile-menu-btn" type="button" class="md:hidden p-2 text-ink hover:text-violet focus:outline-none" aria-label="Apri menu">
+        <svg id="menu-icon-open" class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+        <svg id="menu-icon-close" class="w-7 h-7 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Menu Mobile Dropdown -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-violet/10 px-6 py-6 space-y-4 shadow-lg">
+    <a href="#risultati" class="mobile-link block text-base font-medium text-ink/80 hover:text-pinkAccent transition-colors">Risultati</a>
+    <a href="#per-chi-e" class="mobile-link block text-base font-medium text-ink/80 hover:text-pinkAccent transition-colors">Per chi è</a>
+    <a href="#chi-sono" class="mobile-link block text-base font-medium text-ink/80 hover:text-pinkAccent transition-colors">Chi sono</a>
+    <a href="#programma" class="mobile-link block text-base font-medium text-ink/80 hover:text-pinkAccent transition-colors">Programma</a>
+    <a href="#bonus" class="mobile-link block text-base font-medium text-ink/80 hover:text-pinkAccent transition-colors">Bonus</a>
+    <a href="#pricing" class="mobile-link block text-base font-medium text-ink/80 hover:text-pinkAccent transition-colors">Prezzi</a>
+    <a href="#faq" class="mobile-link block text-base font-medium text-ink/80 hover:text-pinkAccent transition-colors">FAQ</a>
+    <div class="pt-2 sm:hidden">
+      <a href="#programma" class="mobile-link block text-center bg-violet text-white font-semibold px-5 py-3 rounded-full text-sm">
+        Scopri il percorso
+      </a>
+    </div>
   </div>
 </header>
 
