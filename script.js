@@ -85,4 +85,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  // 4. ANIMAZIONI ALLO SCROLL (INTERSECTION OBSERVER)
+  const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+  if ('IntersectionObserver' in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target); // Anima una sola volta quando entra nel viewport
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  } else {
+    // Fallback per browser datati
+    revealElements.forEach(el => el.classList.add('active'));
+  }
+
+  // 5. NAVBAR SCROLL EFFECT (Ombra ed elevazione dinamica)
+  const header = document.querySelector('header');
+  if (header) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 20) {
+        header.classList.add('shadow-md');
+      } else {
+        header.classList.remove('shadow-md');
+      }
+    });
+  }
+
 });

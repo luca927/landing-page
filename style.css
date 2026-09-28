@@ -1,11 +1,71 @@
-  /* Respiro morbido dei blob di sfondo: lento, mai invadente */
-  @keyframes soft-breathe {
-    0%, 100% { opacity: 0.5; transform: translate(0, 0) scale(1); }
-    50%      { opacity: 0.75; transform: translate(2%, -3%) scale(1.05); }
+/* Respiro morbido dei blob di sfondo: lento, mai invadente */
+@keyframes soft-breathe {
+  0%, 100% { opacity: 0.5; transform: translate(0, 0) scale(1); }
+  50%      { opacity: 0.75; transform: translate(2%, -3%) scale(1.05); }
+}
+.bg-blob {
+  animation: soft-breathe 16s ease-in-out infinite;
+}
+
+/* =========================================================
+   ANIMAZIONI SCROLL REVEAL
+   ========================================================= */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.active,
+.reveal-left.active,
+.reveal-right.active,
+.reveal-scale.active {
+  opacity: 1;
+  transform: translateY(0) translateX(0) scale(1);
+}
+
+/* Delay graduali per elementi in griglia */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Micro-interazioni per le card */
+.hover-lift {
+  transition: transform 0.3s ease, shadow 0.3s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-blob { animation: none; }
+  .reveal, .reveal-left, .reveal-right, .reveal-scale {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
-  .bg-blob {
-    animation: soft-breathe 16s ease-in-out infinite;
-  }
-  @media (prefers-reduced-motion: reduce) {
-    .bg-blob { animation: none; }
-  }
+}
